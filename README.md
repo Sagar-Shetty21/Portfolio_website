@@ -6,4 +6,4 @@ sections to be included are
 -skills
 -projects with reports
 -contact me
- 
+-Resume
