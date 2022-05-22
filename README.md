@@ -5,5 +5,6 @@ sections to be included are
 -about me
 -skills
 -projects with reports
+-link to projects 
 -contact me
 -Resume
