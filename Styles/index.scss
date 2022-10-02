@@ -1,5 +1,203 @@
+$dark-main: #151515;
+$dark-sub1: #301B3F;
+$dark-sub2: #3C415C;
+$dark-text: #B4A5A5;
+$light-main: #E8F9FD;
+$light-sub1: #FF1E00;
+$light-sub2: #59CE8F;
+$light-text: #000000;
+$box-shadow: 0 3px 15px rgba(0,0,0,.3);
+
 *{
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
+    box-sizing: border-box;
+    list-style: none; 
 }
+
+body{
+    background-color: $dark-main;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-size: 1.2;
+    color: $light-text;
+    transition: all 0.4s ease-in-out;
+}
+
+
+i{
+    block-size: 60;
+}
+
+a{
+    font-family: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.social{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+    align-items: flex-end;
+    justify-content: center;
+    .btn-github{
+        .btn{
+            padding: 13px;
+        }
+    }
+    .btn-linkedin{
+        .btn{
+            padding: 14px;
+        }
+    }
+    .btn-freecodecamp{
+        .btn{
+            padding: 10px;
+        } 
+    }
+    .btn-email{
+        .btn{
+            padding: 12px;
+        }
+    }
+}
+
+.btn {
+    background-color: $dark-sub1;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 60px;
+    margin: 15px;
+    height: 60px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 60px; 
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+  }
+  
+  .icon {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    white-space: nowrap;
+    padding-right: 20px;
+    font-family: inherit;
+    font-size: 22px;
+  }
+
+  // Hover effect on social button
+  .btn:hover {
+    max-width: 300px;
+    transform: scale(1,1.1);
+
+    // Glow effect
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+  
+  
+  
+  
+
+
+//                         Navigation bar
+
+
+.fixed{
+    top: 0;
+    height: 3rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    .nav-bar{
+        width: 28vw;
+        height: inherit;
+        opacity: 30%;
+        background-color: $dark-sub2;
+        border-radius : 0 0 30px 30px;
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        a{
+            font-size: 2rem;
+            padding: 5px 12px;
+            opacity: 40%;
+        }
+        a:hover{
+            opacity: 100%;
+            transform: scaleY(1.2);
+            transform: scaleX(1.2);
+            .nav-bar{
+                opacity:50%;
+            }
+        }
+    }
+    .nav-bar:hover{
+        opacity:90%;
+        transform: scale(1.2,1.5);
+        transition: 0.6s;
+    }
+}
+
+// hover animation on navigation bar items
+.nav-bar{
+    a{
+        background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #54b3d6 50%,
+        #000 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    a:before{
+        content: '';
+        background: #54b3d6;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+      
+    a:hover {
+        background-position: 0;
+        padding-bottom: 2px;
+    }
+      
+    a:hover::before{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+

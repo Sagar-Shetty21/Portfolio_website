@@ -1,51 +1,82 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-<title>Sagar Shetty</title>
-<link href="Styles/styles.css" rel="stylesheet"/>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width initial-scale=1.0"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap" rel="stylesheet">
+    <title>Sagar Shetty</title>
+    <link href="Styles/index.css" rel="stylesheet"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
 
 <body>
-<main>
 
-    <div class="main-icon">
-        <a href="#Introduction" ><span class="home-button"><img src="logo's/S - Logo.png"></span></a>
-    </div>
-
-    <div id="#Navigation" class="nav-bar">
-        <a href="#About" class="center">About</a>
-        <a href="#Work" class="center">Work</a>
-        <a href="#Contact" class="center">Contact</a>
-    </div>
-
-
-    <header id="Header" class="header-section">
-        <div id="Introduction" class="intro-section">
-            <div class="intro">
-                <div class="intro-sentence"><p>Hi,<br>Welcome<br>I am Sagar<br><span class="changing-text"></span></p></div>
+    <header id="Home" class="section sec1 home">
+        <!-- links to other social profiles -->
+        <div class="social">
+            <div class="btn-github">
+                <a href="https://github.com/sagar-shetty21" class="btn">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span class="text">view my github profile</span>
+                </a>
+            </div>
+            <div class="btn-linkedin">
+                <a href="" class="btn">
+                    <span class="icon"><i class="fab fa-linkedin"></i></span>
+                    <span class="text">connect through linkedin</span>
+                </a>
+            </div>
+            <div class="btn-freecodecamp">
+                <a href="" class="btn">
+                    <span class="icon"><i class="fab fa-free-code-camp"></i></span>
+                    <span class="text">my freecodecamp profile</span>
+                </a>
+            </div>
+            <div class="btn-email">
+                <a href="mailto:sagarmshetty@outlook.com" class="btn">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <span class="text">mail me</span>
+                </a>         
             </div>
         </div>
     </header>
 
-    <!-- <section id="About" class="about-section">
-        <div class="about-text">
-            <div class="about-heading">ABOUT</div>
-            <div class="about-name">Sagar Shetty</div>
-            <div class="about-summary"><p>This is abcdefgh....xyz.(to be done later)<br>This is abcdefgh....xyz.(to be done later)<br>This is abcdefgh....xyz.(to be done later)</p></div>
+    <main>
+        <section id="About" class="section sec2 about"></section>
+        <section id="Work" class="section sec3 work"></section>
+        <section id="Contact" class="section sec4 contact"></section>
+    </main>
+
+
+    <!-- Fixed Navigation Bar -->
+    <div class="fixed">
+        <div class="nav-bar">
+            <a href="#Home" class="home nav-link">
+                <span>HOME</span>
+            </a>
+            <a href="#About" class="about nav-link">
+                <span>ABOUT</span>
+            </a>
+            <a href="#Work" class="work nav-link">
+                <span>WORK</span>
+            </a>
+            <a href="#Contact" class="contact nav-link">
+                <span>CONTACT</span>
+            </a>
         </div>
-        <div class="about-image">
-            <div class="my-img"><img src="https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg" height="350px" width="350" alt="Sagar's image"/></div>
-        </div>
-    </section> -->
+    </div>
+
     
-</main>
+
+
+
 </body>
+
+
 </html>
