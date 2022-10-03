@@ -1,1 +1,52 @@
-/*# sourceMappingURL=header-logo.css.map */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px rgba(226, 216, 25, 0.747), 0px 0px 5px #614ad3;
+  }
+  to {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.367), 0px 0px 20px #614ad3;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px rgba(226, 216, 25, 0.747), 0px 0px 5px #614ad3;
+  }
+  to {
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.367), 0px 0px 20px #614ad3;
+  }
+}
+.header-logo {
+  position: fixed;
+  top: 5px;
+  left: 3rem;
+  border: rgba(196, 196, 213, 0) solid 2px;
+  border-radius: 50%;
+  background-color: rgba(24, 33, 43, 0.8352941176);
+}
+.header-logo .text-logo {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 38px;
+  font-family: inherit;
+  color: rgba(230, 204, 241, 0.61);
+  font-weight: 900;
+  -webkit-animation-name: glow;
+          animation-name: glow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.header-logo:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(5, 23, 52, 0);
+  transform: rotate(180deg), scale(1.8, 1.5);
+}
+.header-logo:hover .text-logo {
+  color: rgba(84, 202, 235, 0.6980392157);
+  -webkit-animation: none;
+          animation: none;
+}/*# sourceMappingURL=header-logo.css.map */
