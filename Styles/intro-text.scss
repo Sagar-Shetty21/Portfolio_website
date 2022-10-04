@@ -1,0 +1,70 @@
+
+
+.intro{
+    position: fixed;
+    top: 11rem;
+    left: 8rem;
+    .small{
+        font-size: 45px;
+        opacity: 0.6;
+        color: rgba(127, 68, 182, 0.362);
+        font-weight: 100;
+    }
+    .big{
+        font-size: 80px;
+        color: rgb(145, 44, 145);
+        font-weight: 100;
+        .name{
+            color:rgb(12, 47, 47);
+            font-weight: 400;
+        }
+    }
+    .bigger{
+        font-size: 110px;
+        width: 40vw;
+    }
+    p{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+    }
+    .changing{
+        position:absolute;
+        opacity: 0;
+    }
+
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+  
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+  
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.web-developer{
+    color: rgba(9, 55, 9, 0.868);
+}
+
+.programmer{
+    color: rgb(8, 73, 66);
+}
+
+.problem-solver{
+    color:rgb(66, 19, 27);
+}

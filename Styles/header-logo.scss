@@ -31,7 +31,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     background-color: rgba(5, 23, 52, 0);
-    transform: rotate(180deg),scale(1.8,1.5);
+    transform: scale(1.8,1.5)rotate(180deg);
     .text-logo{
         color: #54caebb2;
         animation: none;

@@ -5,8 +5,12 @@
 <head>
     <title>Sagar Shetty</title>
     <link href="Styles/index.css" rel="stylesheet"/>
-    <link href="Styles/background.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="Styles/header-logo.css">
+    <link href="Styles/dark-theme-background.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="Styles/header-logo.css"/>
+    <link rel="stylesheet" href="Styles/intro-text.css"/>
+    <link rel="stylesheet" href="Styles/dark-mode-toggle.css"/>
+
 
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width initial-scale=1.0"/>
@@ -196,7 +200,35 @@
     <div class="header-logo">
         <span class="text-logo"> S </span>
     </div>
+
+
+
+    <!-- Dark Light Toggle button -->
+    <div class="toggle-btn">
+        <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <div class='ball'></div>
+            </label>
+    </div>
+
+
         
+
+    <!-- Intro text -->
+
+    <div class="intro">
+        <span class="small">Hello,<br></span>
+        <span class="big">I'm <span class="name">Sagar Shetty</span><br></span>
+        <p class="bigger">
+            <span class="changing web-developer">Web-Developer.</span>
+            <span class="changing programmer">Programmer.</span>
+            <span class="changing problem-solver">Problem-Solver.</span>
+        </p>
+    </div>
+    <script src="Scripts/Changing-text.js"></script>
+
 
 
 
