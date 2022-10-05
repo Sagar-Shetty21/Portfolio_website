@@ -68,3 +68,33 @@
 .problem-solver{
     color:rgb(66, 19, 27);
 }
+
+
+
+// Buttons
+
+.button{
+    position: fixed;
+    display: inline-flex;
+    bottom: 10rem;
+    left: 8rem;
+    
+    .res-btn{
+        width: 165px;
+        height: 70px;
+        background-color: beige;
+        border-radius: 25px;
+        padding-left: 20px;
+        padding-right: 30px;
+
+    }
+    .abt-btn{
+        width: 165px;
+        height: 70px;
+        background-color: beige;
+        border-radius: 25px;
+        padding-right: 30px;
+        padding-left: 20px;
+
+    }
+}
