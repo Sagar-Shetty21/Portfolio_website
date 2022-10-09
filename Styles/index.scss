@@ -125,6 +125,7 @@ a{
     position: fixed;
     .nav-bar{
         width: 28vw;
+        min-width: 430px;
         height: inherit;
         opacity: 30%;
         background-color: $dark-sub2;

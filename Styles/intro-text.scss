@@ -75,26 +75,27 @@
 
 .button{
     position: fixed;
-    display: inline-flex;
-    bottom: 10rem;
+    display: flex;
+    bottom: 9rem;
     left: 8rem;
     
-    .res-btn{
-        width: 165px;
-        height: 70px;
-        background-color: beige;
-        border-radius: 25px;
-        padding-left: 20px;
-        padding-right: 30px;
-
+    button{
+        background-color: rgba(29, 26, 26, 0.37);
+        border:none;
     }
+   
     .abt-btn{
         width: 165px;
-        height: 70px;
-        background-color: beige;
+        height: 55px;
         border-radius: 25px;
-        padding-right: 30px;
-        padding-left: 20px;
+        margin-left: 40px;
+        
+    }
+    .res-btn{
+        width: 165px;
+        height: 55px;
+        border-radius: 25px;
+        margin-left: 120px;
 
     }
 }
