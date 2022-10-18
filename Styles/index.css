@@ -6,11 +6,13 @@
 }
 
 body {
-  background-color: #151515;
   font-family: "Alumni Sans Inline One", cursive;
   font-size: 1.2;
   color: #000000;
   transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 i {

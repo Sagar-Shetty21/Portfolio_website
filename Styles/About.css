@@ -1,0 +1,25 @@
+.about-card {
+  background-color: rgb(36, 52, 66);
+  width: 94vw;
+  height: 92vh;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 11;
+}
+
+.details {
+  height: 100%;
+  width: 42%;
+  background-color: antiquewhite;
+  position: absolute;
+  border-radius: 20px 0 0 20px;
+}
+
+.skills {
+  border-radius: 0 20px 20px 0;
+}/*# sourceMappingURL=About.css.map */

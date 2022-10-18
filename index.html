@@ -5,11 +5,21 @@
 <head>
     <title>Sagar Shetty</title>
     <link href="Styles/index.css" rel="stylesheet"/>
-    <link href="Styles/dark-theme-background.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="Styles/DarkLightMode.css"/>
     
     <link rel="stylesheet" href="Styles/header-logo.css"/>
     <link rel="stylesheet" href="Styles/intro-text.css"/>
+    <!--
     <link rel="stylesheet" href="Styles/dark-mode-toggle.css"/>
+    <link href="Styles/light-theme-background.css" rel="stylesheet"/>
+    <link href="Styles/dark-theme-background.css" rel="stylesheet"/>
+    -->
+   <!--
+    <link rel="stylesheet" href="Styles/About.css"/>
+    <link rel="stylesheet" href="Styles/Contact.css"/>
+    <link rel="stylesheet" href="Styles/Work.css"/>
+   -->
 
 
     <meta charset="UTF-8"/>
@@ -26,6 +36,7 @@
 
 <body>
 
+<!-- Home Section -->
     <header id="Home" class="section sec1 home">
         <!-- links to other social profiles -->
         <div class="social">
@@ -54,12 +65,46 @@
                 </a>         
             </div>
         </div>
-    </header>
+
+         <!-- Intro text -->
+        <div class="intro">
+            <span class="small">Hello,<br></span>
+            <span class="big">I'm <span class="name">Sagar Shetty</span><br></span>
+            <p class="bigger">
+                <span class="changing web-developer">Web-Developer.</span>
+                <span class="changing programmer">Programmer.</span>
+                <span class="changing problem-solver">Problem-Solver.</span>
+            </p>
+        </div>
+        
+
+        <!-- Buttons -->
+        <div class="button">
+            <button class="abt-btn" type="button">About Me</button>
+            <button class="res-btn" type="button">Resume</button>
+        </div>
+        </header>
 
     <main>
-        <section id="About" class="section sec2 about"></section>
-        <section id="Work" class="section sec3 work"></section>
-        <section id="Contact" class="section sec4 contact"></section>
+<!-- About Section -->
+        <section id="About" class="section sec2 about-card">
+            <div class="details">
+                
+            </div>
+            <div class="skills">
+
+            </div>
+        </section>
+
+<!-- Work Section -->
+        <section id="Work" class="section sec3 work-card">
+            
+        </section>
+
+<!-- Contact Section -->
+        <section id="Contact" class="section sec4 contact-card">
+            
+        </section>
     </main>
 
 
@@ -81,17 +126,35 @@
         </div>
     </div>
 
+    
+
+    <!--header logo
+    <div class="header-logo">
+        <span class="text-logo"> S </span>
+    </div>
+-->
+
+    <!-- Dark Light Toggle button -->
+    <div id="toggle-btn" class="light" onchange="changeMode()">
+       <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <div class='ball'></div>
+            </label> 
+    </div>
+
     <!-- BAckground stars effect -->
-    <div id="star-bg">
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
+    <div id="star-bg" class="">
+        <div id='stars' class=""></div>
+        <div id='stars2' class=""></div>
+        <div id='stars3' class=""></div>
     </div>
     
 
     <!-- Background Snow effect -->
-    <div id="snow-bg">
-        <ul class="g-snows" id="jsi-snows">
+    <div id="snow-bg" class="light-mode">
+        <ul id="jsi-snows" class="g-snows">
             <li></li>
             <li></li>
             <li></li>
@@ -196,49 +259,17 @@
     </div>
 
 
-    <!--header logo-->
-    <div class="header-logo">
-        <span class="text-logo"> S </span>
-    </div>
-
-
-
-    <!-- Dark Light Toggle button -->
-    <div class="toggle-btn">
-        <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="label">
-                <i class="fas fa-moon"></i>
-                <i class='fas fa-sun'></i>
-                <div class='ball'></div>
-            </label>
-    </div>
-
 
         
 
-    <!-- Intro text -->
-
-    <div class="intro">
-        <span class="small">Hello,<br></span>
-        <span class="big">I'm <span class="name">Sagar Shetty</span><br></span>
-        <p class="bigger">
-            <span class="changing web-developer">Web-Developer.</span>
-            <span class="changing programmer">Programmer.</span>
-            <span class="changing problem-solver">Problem-Solver.</span>
-        </p>
-    </div>
-    <script src="Scripts/Changing-text.js"></script>
-
-        <!-- Buttons -->
-        <div class="button">
-            <button class="abt-btn" type="button">About Me</button>
-            <button class="res-btn" type="button">Resume</button>
-        </div>
+   
 
 
 
 
 </body>
 
+<script src="Scripts/Changing-text.js"></script>
+<script src="Scripts/DarkLightMode.js"></script>
 
 </html>

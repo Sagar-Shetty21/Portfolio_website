@@ -16,11 +16,13 @@ $box-shadow: 0 3px 15px rgba(0,0,0,.3);
 }
 
 body{
-    background-color: $dark-main;
     font-family: 'Alumni Sans Inline One', cursive;
     font-size: 1.2;
     color: $light-text;
     transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -123,6 +125,7 @@ a{
     align-items: center;
     justify-content: center;
     position: fixed;
+    //z-index: 80;
     .nav-bar{
         width: 28vw;
         min-width: 430px;
