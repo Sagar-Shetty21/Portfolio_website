@@ -5,6 +5,16 @@
   list-style: none;
 }
 
+.home {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sec1 {
+  z-index: 10;
+}
+
 body {
   font-family: "Alumni Sans Inline One", cursive;
   font-size: 1.2;
@@ -27,7 +37,6 @@ a {
 
 .social {
   position: absolute;
-  z-index: 0;
   top: 50vh;
   right: 9vw;
   display: flex;
@@ -35,6 +44,7 @@ a {
   transform: translateY(-50%);
   align-items: flex-end;
   justify-content: center;
+  z-index: 1;
 }
 .social .btn-github .btn {
   padding: 13px;
