@@ -1,5 +1,5 @@
 .contact-card{
-    background-color: rgb(56, 24, 68);
+    background-color: rgba(71, 187, 237, 0.334);
     width: 94vw;
     height: 92vh;
     border-radius: 20px;
@@ -9,6 +9,15 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 12;
-    
+    z-index: -1;
+}
+
+.contact-layout{
+    position:absolute;
+    top: 6%;
+    left: 3%;
+    width: 45%;
+    height: 88%;
+    border: 2px solid black;
+    border-radius: 6px;
 }

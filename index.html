@@ -10,11 +10,10 @@
     
     <link rel="stylesheet" href="Styles/header-logo.css"/>
     <link rel="stylesheet" href="Styles/intro-text.css"/>
-    <!--
-    <link rel="stylesheet" href="Styles/dark-mode-toggle.css"/>
-    <link href="Styles/light-theme-background.css" rel="stylesheet"/>
-    <link href="Styles/dark-theme-background.css" rel="stylesheet"/>
-    -->
+    <link rel="stylesheet" href="Styles/Contact.css"/>
+
+
+
    <!--
     <link rel="stylesheet" href="Styles/About.css"/>
     <link rel="stylesheet" href="Styles/Contact.css"/>
@@ -23,7 +22,9 @@
 
 
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap" rel="stylesheet">
@@ -69,7 +70,7 @@
          <!-- Intro text -->
         <div class="intro">
             <span class="small">Hello,<br></span>
-            <span class="big">I'm <span class="name">Sagar Shetty</span><br></span>
+            <span class="big">I'm <span class="name">Sagar</span><br></span>
             <p class="bigger">
                 <span class="changing web-developer">Web-Developer.</span>
                 <span class="changing programmer">Programmer.</span>
@@ -80,8 +81,8 @@
 
         <!-- Buttons -->
         <div class="button">
-            <button class="abt-btn" type="button">About Me</button>
-            <button class="res-btn" type="button">Resume</button>
+            <button class="abt-btn btn-effect">About Me</button>
+            <button class="res-btn btn-effect">Resume</button>
         </div>
         </header>
 
@@ -103,7 +104,22 @@
 
 <!-- Contact Section -->
         <section id="Contact" class="section sec4 contact-card">
-            
+            <div class="contact-layout">
+                <form class="contact-form">
+                    <p>I'd love to hear from you :)</p>
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" type="text" />
+
+                    <label for="contact-email">E-Mail ID</label>
+                    <input id="contact-email" type="email"/>
+
+                    <label for="contact-message">Message</label>
+                    <input id="contact-message" type="textbox"/>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+            </div>
         </section>
     </main>
 
@@ -111,16 +127,16 @@
     <!-- Fixed Navigation Bar -->
     <div class="fixed">
         <div class="nav-bar">
-            <a href="#Home" class="home nav-link">
+            <a href="#Home" class="nav-link">
                 <span>HOME</span>
             </a>
-            <a href="#About" class="about nav-link">
+            <a href="#About" class="nav-link">
                 <span>ABOUT</span>
             </a>
-            <a href="#Work" class="work nav-link">
+            <a href="#Work" class="nav-link">
                 <span>WORK</span>
             </a>
-            <a href="#Contact" class="contact nav-link">
+            <a href="#Contact" class="nav-link">
                 <span>CONTACT</span>
             </a>
         </div>

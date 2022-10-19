@@ -36,11 +36,13 @@ a{
     text-decoration: none;
 }
 
+
+
 .social{
-    position: fixed;
-    z-index: 10;
-    top: 50%;
-    right: 3%;
+    position: absolute;
+    z-index: 0;
+    top: 50vh;
+    right: 9vw;
     display: flex;
     flex-direction: column;
     transform: translateY(-50%);
@@ -70,7 +72,7 @@ a{
 
 .btn {
     background-color: $dark-sub1;
-    color: whitesmoke;
+    color: rgb(224, 214, 214);
     text-decoration: none;
     border-radius: 60px;
     margin: 15px;
@@ -125,7 +127,7 @@ a{
     align-items: center;
     justify-content: center;
     position: fixed;
-    //z-index: 80;
+    z-index: 15;
     .nav-bar{
         width: 28vw;
         min-width: 430px;

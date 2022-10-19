@@ -1,21 +1,21 @@
 
 
 .intro{
-    position: fixed;
-    top: 11rem;
-    left: 8rem;
+    position: absolute;
+    top: 12vw;
+    left: 14vw;
     .small{
         font-size: 45px;
         opacity: 0.6;
-        color: rgba(127, 68, 182, 0.362);
+        color: rgba(15, 16, 16, 0.933);
         font-weight: 100;
     }
     .big{
         font-size: 80px;
-        color: rgb(145, 44, 145);
+        color: rgb(17, 1, 17);
         font-weight: 100;
         .name{
-            color:rgb(12, 47, 47);
+            color:rgb(30, 55, 55);
             font-weight: 400;
         }
     }
@@ -41,7 +41,7 @@
     float: left;
     transform: translateZ(25px);
     transform-origin: 50% 50% 25px;
-  }
+}
   
 .letter.out {
     transform: rotateX(90deg);
@@ -58,44 +58,58 @@
 }
 
 .web-developer{
-    color: rgba(9, 55, 9, 0.868);
+    color: rgba(182, 239, 182, 0.868);
 }
 
 .programmer{
-    color: rgb(8, 73, 66);
+    color: rgb(166, 234, 228);
 }
 
 .problem-solver{
-    color:rgb(66, 19, 27);
+    color:rgb(201, 168, 234);
 }
 
 
 
-// Buttons
+//                    Buttons
 
 .button{
     position: fixed;
     display: flex;
-    bottom: 9rem;
-    left: 8rem;
+    bottom: 22vh;
+    left: 14vw;
+    
     
     button{
         background-color: rgba(29, 26, 26, 0.37);
         border:none;
+        font-family: inherit;
+        font-size: 26px;
     }
    
     .abt-btn{
         width: 165px;
         height: 55px;
-        border-radius: 25px;
+        border-radius: 12px;
         margin-left: 40px;
-        
     }
     .res-btn{
         width: 165px;
         height: 55px;
-        border-radius: 25px;
+        border-radius: 12px;
         margin-left: 120px;
 
     }
+    .btn-effect {
+        border-color: rgb(76, 174, 235);
+        color: #fff;
+        box-shadow: 0 0 40px 40px rgb(19, 19, 51) inset, 0 0 0 0 rgb(9, 9, 60);
+        transition: all 150ms ease-in-out;
+        
+        &:hover {
+          box-shadow: 0 0 10px 0 rgba(90, 156, 237, 0.334) inset, 0 0 10px 4px blue;
+          color:black;
+        }
+    }
 }
+

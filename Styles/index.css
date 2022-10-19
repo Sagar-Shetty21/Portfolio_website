@@ -26,10 +26,10 @@ a {
 }
 
 .social {
-  position: fixed;
-  z-index: 10;
-  top: 50%;
-  right: 3%;
+  position: absolute;
+  z-index: 0;
+  top: 50vh;
+  right: 9vw;
   display: flex;
   flex-direction: column;
   transform: translateY(-50%);
@@ -51,7 +51,7 @@ a {
 
 .btn {
   background-color: #301B3F;
-  color: whitesmoke;
+  color: rgb(224, 214, 214);
   text-decoration: none;
   border-radius: 60px;
   margin: 15px;
@@ -94,6 +94,7 @@ a {
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 15;
 }
 .fixed .nav-bar {
   width: 28vw;
