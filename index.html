@@ -3,7 +3,8 @@
 <html lang="en">
 
 <head>
-    <title>Sagar Shetty</title>
+    <title>Sagar's personal website</title>
+    <link rel = "icon" href = "" type = "image/x-icon">
     <link href="Styles/index.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="Styles/DarkLightMode.css"/>
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="Styles/Contact.css"/>
     <link rel="stylesheet" href="Styles/Contact.css"/>
     <link rel="stylesheet" href="Styles/Work.css"/>
-
+    <link rel="stylesheet" href="Styles/About.css"/>
 
 
    <!--
@@ -82,8 +83,8 @@
 
         <!-- Buttons -->
         <div class="button">
-            <button class="abt-btn btn-effect">About Me</button>
-            <button class="res-btn btn-effect">Resume</button>
+            <button class="abt-btn btn-effect" onclick="aboutClick()">About Me</button>
+            <button class="res-btn btn-effect" >Resume</button>
         </div>
         </header>
 
@@ -94,13 +95,38 @@
                 
             </div>
             <div class="skills">
-
+                
             </div>
         </section>
 
 <!-- Work Section -->
         <section id="Work" class="section sec3 work-card">
-            
+
+            <!--  Title  -->
+            <svg viewBox="0 0 600 60">
+                <!-- Symbol-->
+                <symbol id="s-text">
+                  <text text-anchor="middle" x="50%" y="50%" dy=".35em">P R O J E C T S</text>
+                </symbol>
+                <!-- Duplicate symbols-->
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+                <use class="text" xlink:href="#s-text"></use>
+            </svg>
+            <!--  Projects  -->
+            <div class="projects-flex">
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+                <div class="project-container"></div>
+            </div>
         </section>
 
 <!-- Contact Section -->
@@ -111,17 +137,17 @@
                     <p class="subtitle">I'd love to hear from you :)</p>
                     
                     <div class="input-container ic1">
-                        <input id="firstname" class="input" type="text" placeholder=" " />
+                        <input id="firstname" class="input" type="text" placeholder=" " maxlength="28" />
                         <div class="cut cut-short"></div>
                         <label for="firstname" class="placeholder">Name</label>
                     </div>
                     <div class="input-container ic2">
-                        <input id="email" class="input" type="email" placeholder=" " />
+                        <input id="email" class="input" type="email" placeholder=" " maxlength="42" />
                         <div class="cut"></div>
                         <label for="lastname" class="placeholder">E-mail ID</label>
                     </div>
                     <div class="input-container ic2">
-                        <textarea id="message" class="input msg-input" type="text" placeholder=" " style="resize: none"></textarea>
+                        <textarea id="message" class="input msg-input" type="text" placeholder=" " style="resize: none" maxlength="286"></textarea>
                         <div class="cut"></div>
                         <label for="email" class="placeholder">Message</label>
                     </div>

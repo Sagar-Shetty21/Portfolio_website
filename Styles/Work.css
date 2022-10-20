@@ -9,8 +9,82 @@
   top: 0;
   bottom: 0;
   margin: auto;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.work-card::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .sec3 {
   z-index: -1;
+}
+
+/* Main styles */
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 8s infinite linear;
+  animation: stroke 8s infinite linear;
+}
+.text:nth-child(5n+1) {
+  stroke: #2a1f52;
+  -webkit-animation-delay: -1.6s;
+  animation-delay: -1.6s;
+}
+.text:nth-child(5n+2) {
+  stroke: rgba(24, 25, 26, 0);
+  -webkit-animation-delay: -3.2s;
+  animation-delay: -3.2s;
+}
+.text:nth-child(5n+3) {
+  stroke: #271238;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n+4) {
+  stroke: rgba(11, 18, 17, 0);
+  -webkit-animation-delay: -6.4s;
+  animation-delay: -6.4s;
+}
+.text:nth-child(5n+5) {
+  stroke: #2d0936;
+  -webkit-animation-delay: -8s;
+  animation-delay: -8s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+/* Other styles */
+svg {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 12px;
+}
+
+.project-container {
+  width: 350px;
+  height: 250px;
+  margin: 6px;
+  background: green;
+  border: 8px solid rgba(2, 10, 18, 0.542);
+  border-style: outset;
+  box-shadow: rgba(9, 30, 66, 0.31) 0px 0px 1px 0px, rgba(9, 30, 66, 0.25) 0px 1px 1px 0px;
 }/*# sourceMappingURL=Work.css.map */
