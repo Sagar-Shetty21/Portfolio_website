@@ -80,14 +80,16 @@ svg {
 }
 
 .project-container {
-  width: 350px;
-  height: 250px;
+  width: 60%;
+  height: 45vh;
+  border-radius: 8px;
   margin: 6px;
-  background: green;
-  border: 3px solid rgba(15, 112, 209, 0.542);
+  background: rgb(207, 210, 207);
+  padding: 14px;
 }
 
-.project-container:hover {
-  border: 8px solid rgba(17, 118, 220, 0.792);
-  border-style: outset;
+.project-innerwrap {
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
 }/*# sourceMappingURL=Work.css.map */
