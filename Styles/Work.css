@@ -1,5 +1,5 @@
 .work-card {
-  background-color: rgb(139, 139, 139);
+  background-color: rgba(50, 48, 53, 0.537);
   width: 94vw;
   height: 92vh;
   border-radius: 20px;
@@ -26,45 +26,40 @@
   fill: none;
   stroke-width: 3;
   stroke-linejoin: round;
-  stroke-dasharray: 70 330;
+  stroke-dasharray: 70 250;
   stroke-dashoffset: 0;
   -webkit-animation: stroke 8s infinite linear;
   animation: stroke 8s infinite linear;
 }
-.text:nth-child(5n+1) {
-  stroke: #7958ee;
-  -webkit-animation-delay: -1.6s;
-  animation-delay: -1.6s;
+.text:nth-child(4n+1) {
+  stroke: #e2dfeb;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
 }
-.text:nth-child(5n+2) {
-  stroke: rgba(75, 154, 233, 0.9960784314);
-  -webkit-animation-delay: -3.2s;
-  animation-delay: -3.2s;
+.text:nth-child(4n+2) {
+  stroke: rgba(3, 20, 37, 0.9960784314);
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
 }
-.text:nth-child(5n+3) {
-  stroke: #a850ef;
-  -webkit-animation-delay: -4.8s;
-  animation-delay: -4.8s;
+.text:nth-child(4n+3) {
+  stroke: #ece4f4;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
 }
-.text:nth-child(5n+4) {
-  stroke: #1fbaa3;
-  -webkit-animation-delay: -6.4s;
-  animation-delay: -6.4s;
-}
-.text:nth-child(5n+5) {
-  stroke: #cf59ed;
+.text:nth-child(4n+4) {
+  stroke: #010807;
   -webkit-animation-delay: -8s;
   animation-delay: -8s;
 }
 
 @-webkit-keyframes stroke {
   100% {
-    stroke-dashoffset: -400;
+    stroke-dashoffset: -320;
   }
 }
 @keyframes stroke {
   100% {
-    stroke-dashoffset: -400;
+    stroke-dashoffset: -320;
   }
 }
 /* Other styles */

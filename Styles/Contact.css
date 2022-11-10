@@ -9,6 +9,9 @@
   bottom: 0;
   margin: auto;
   background: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec4 {
@@ -16,10 +19,8 @@
 }
 
 .contact-layout {
-  position: absolute;
-  top: 6%;
-  left: 3%;
-  width: 45%;
+  width: 52%;
+  min-width: 400px;
   height: auto;
   border-radius: 12px;
   padding: 3%;

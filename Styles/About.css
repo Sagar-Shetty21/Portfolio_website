@@ -9,6 +9,7 @@
   bottom: 0;
   margin: auto;
   background-color: aqua;
+  display: flex;
 }
 
 .sec2 {
@@ -19,10 +20,205 @@
   height: 100%;
   width: 42%;
   background-color: antiquewhite;
-  position: absolute;
   border-radius: 20px 0 0 20px;
+  padding: 35px;
 }
 
-.skills {
+.details-heading h1 {
+  position: relative;
+  padding-right: 40px;
+  margin: 0;
+  text-align: right;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  transition: all 0.4s ease 0s;
+}
+
+.details-heading h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.details-heading h1:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  width: 165px;
+  background-color: #111;
+}
+
+.details-heading h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 95%;
+  background-color: #333;
+}
+
+.details-paragraph {
+  margin: 40px 0px;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.details-paragraph > p {
+  margin-top: 35px;
+}
+
+.abt-contact-button {
+  position: relative;
+  font-family: inherit;
+  margin: 30px;
+}
+.abt-contact-button .button1 {
+  color: white;
+  background-color: rgb(62, 147, 244);
+  border: 5px solid transparent;
+  transition: 0.2s ease;
+  border-radius: 50px;
+  padding: 8px;
+}
+.abt-contact-button .button1:hover {
+  color: rgba(62, 164, 231, 0.334);
+  background-color: white;
+  transform: scale(1.1);
+  border: 5px solid blue;
+}
+
+.skills-buttons {
+  padding: 50px;
+}
+
+.about-card > .skills {
+  text-align: center;
+  height: 100%;
+  width: 58%;
+  background-color: azure;
+  padding: 35px;
   border-radius: 0 20px 20px 0;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin: 32px;
+  margin-right: 0;
+}
+
+.btn-11 {
+  border: none;
+  background: rgb(251, 33, 117);
+  background: linear-gradient(0deg, rgb(211, 227, 211) 0%, rgb(188, 16, 240) 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.btn-11:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-11:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: shiny-btn1 3s ease-in-out infinite;
+          animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11:hover {
+  opacity: 0.7;
+}
+
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+.skills-heading h1 {
+  position: relative;
+  padding-left: 30px;
+  margin: 0;
+  text-align: left;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  transition: all 0.4s ease 0s;
+}
+
+.skills-heading h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.skills-heading h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 410px;
+  background-color: #111;
+}
+
+.skills-heading h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 95%;
+  background-color: #333;
 }/*# sourceMappingURL=About.css.map */
