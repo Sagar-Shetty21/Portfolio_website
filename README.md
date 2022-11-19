@@ -6,3 +6,6 @@
 - CSS/SCSS
 - Vanilla JavaScript
 - Netlify(Hosting)
+
+### Info
+- 
