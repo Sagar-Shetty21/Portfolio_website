@@ -79,7 +79,7 @@ svg {
   height: 45vh;
   border-radius: 8px;
   margin: 6px;
-  background: rgb(207, 210, 207);
+  background: linear-gradient(to right, black, white);
   padding: 14px;
 }
 
