@@ -84,10 +84,14 @@ svg {
 }
 
 .project-container:hover {
-  box-shadow: 0 0 18px rgba(33, 33, 33, 0.2);
+  box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
+  background: linear-gradient(to right, white, black);
+  transition: 0.4s ease-in-out;
+  height: 47vh;
+  width: 62%;
 }
 .project-container:hover .proj-title-line {
-  width: 240px;
+  width: 320px;
   transition: 0.4s ease-in-out;
 }
 
@@ -103,11 +107,23 @@ svg {
   height: 100%;
   padding: 22px;
 }
+.proj-info .proj-title {
+  font-size: 42px;
+}
 .proj-info .proj-title-line {
-  height: 8px;
-  width: 40px;
+  height: 12px;
+  width: 12px;
   border-radius: 5px;
   background-color: aquamarine;
+}
+.proj-info .proj-stack {
+  color: rgb(85, 79, 79);
+}
+.proj-info .proj-detail {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-top: 18px;
+  font-size: 18px;
+  color: rgb(28, 60, 105);
 }
 
 .proj-demo {
@@ -119,6 +135,8 @@ svg {
 }
 .proj-demo .demo-img {
   border-radius: 4px;
+  height: 170px;
+  width: 300px;
 }
 .proj-demo .proj-demo-buttons {
   position: absolute;
@@ -126,10 +144,10 @@ svg {
   display: inline-flex;
 }
 .proj-demo .proj-demo-buttons .proj-btn {
-  min-width: 80px;
-  padding: 3px;
+  min-width: 90px;
+  padding: 10px;
   margin: 8px;
-  border-radius: 2px;
+  border-radius: 8px;
   background-color: aqua;
   display: none;
 }

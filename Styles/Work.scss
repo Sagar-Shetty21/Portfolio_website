@@ -90,20 +90,24 @@ svg {
     height: 45vh;
     border-radius: 8px;
     margin: 6px;
-    background: linear-gradient(to right, black , white);
+    background: linear-gradient(to right, black , white);;
     padding: 14px;
     //border: 3px solid rgba(15, 112, 209, 0.542);
     //border-style: outset;
-    
 }
 
 .project-container:hover{
   .proj-title-line{
-    width: 240px;
+    width: 320px;
     transition: 0.4s ease-in-out;
   }
-  box-shadow: 0 0 18px rgba(33,33,33,.2);
+  box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
+  background: linear-gradient(to right, white, black );
+  transition: 0.4s ease-in-out;
+  height: 47vh;
+  width: 62%;
 }
+
 
 .project-innerwrap{
     width: 100%;
@@ -118,11 +122,23 @@ svg {
     width: 60%;
     height: 100%;
     padding: 22px;
+    .proj-title{
+      font-size: 42px;
+    }
     .proj-title-line{
-      height:8px;
-      width:40px;
+      height:12px;
+      width:12px;
       border-radius:5px;
       background-color: aquamarine;
+    }
+    .proj-stack{
+      color: rgb(85, 79, 79);
+    }
+    .proj-detail{
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      padding-top: 18px;
+      font-size: 18px;
+      color: rgb(28, 60, 105)
     }
 }
 
@@ -135,6 +151,8 @@ svg {
 
     .demo-img{
       border-radius: 4px;
+      height:170px;
+      width:300px;
     }
     
     .proj-demo-buttons{
@@ -142,10 +160,10 @@ svg {
       text-align: center;
       display: inline-flex;
       .proj-btn{
-        min-width: 80px;
-        padding: 3px;
+        min-width: 90px;
+        padding: 10px;
         margin: 8px;
-        border-radius: 2px;
+        border-radius: 8px;
         background-color: aqua;
         display: none;
       }

@@ -23,7 +23,7 @@
 .details{
     height: 100%;
     width: 42%;
-    background-color: antiquewhite;
+    background-color: white;
     //position: absolute;
     border-radius: 20px 0 0 20px;
     padding: 35px;
@@ -86,23 +86,37 @@
 }
 
 .abt-contact-button {
-  position: relative;
-  font-family: inherit;
-  margin: 30px;
+  margin: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .button1 {
-    color: white;
-    background-color: rgb(62, 147, 244);
-    border: 5px solid transparent;
-    transition: .2s ease;
-    border-radius: 50px;
-    padding: 8px;
+    width: 190px;
+    height: 45px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    color: #000;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
   }
   
   .button1:hover {
-    color: rgba(62, 164, 231, 0.334);
-    background-color: white;
-    transform: scale(1.1);
-    border: 5px solid blue;
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
   }
 }
 
