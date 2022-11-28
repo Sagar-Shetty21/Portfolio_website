@@ -6,16 +6,16 @@
 .intro .small {
   font-size: 45px;
   opacity: 0.6;
-  color: rgba(15, 16, 16, 0.933);
+  color: #e1afa1;
   font-weight: 100;
 }
 .intro .big {
   font-size: 80px;
-  color: rgb(17, 1, 17);
+  color: #96FFFF;
   font-weight: 100;
 }
 .intro .big .name {
-  color: rgb(30, 55, 55);
+  color: #41B3A3;
   font-weight: 400;
 }
 .intro .bigger {
@@ -63,7 +63,7 @@
 }
 
 .problem-solver {
-  color: rgb(201, 168, 234);
+  color: rgb(142, 194, 218);
 }
 
 .button {
