@@ -957,8 +957,10 @@ svg {
     border-radius: 0;
   }
   .about-card .details-heading h1 {
+    font-size: 22px;
     text-align: left;
     padding-left: 15px;
+    padding-bottom: 4px;
   }
   .about-card .details-heading h1:before {
     right: auto;
@@ -983,8 +985,24 @@ svg {
     width: 100%;
     height: auto;
     padding: 6px;
+    border-radius: 0 0 20px 20px;
+  }
+  .skills-heading h1 {
+    font-size: 22px;
+    padding: 0;
+    padding-bottom: 4px;
+  }
+  .skills-heading h1:before {
+    width: 199px;
   }
   .skills-buttons {
-    padding: 6px;
+    padding: 4px;
+  }
+  .custom-btn {
+    width: auto;
+    height: 35px;
+    padding: 3px 8px;
+    font-size: 10px;
+    margin: 6px;
   }
 }/*# sourceMappingURL=main.css.map */
