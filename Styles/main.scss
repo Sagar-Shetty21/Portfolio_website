@@ -608,8 +608,6 @@ $others: green,yellow,blue,pink;
     z-index: -1;
 }
 
-
-
 //   Title Animation  
 
 $colors: #e2dfeb, #031425fe, #ece4f4, #010807;
@@ -684,7 +682,7 @@ svg {
 
 .project-container:hover{
   .proj-title-line{
-    width: 320px;
+    width: 70%;
     transition: 0.4s ease-in-out;
   }
   box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
@@ -1050,6 +1048,7 @@ svg {
         top: 0;
         bottom: 0;
         margin: auto;
+        padding-bottom: 32px;
         overflow-y: scroll;
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
         scrollbar-width: none;     /* Firefox */
@@ -1119,5 +1118,83 @@ svg {
         font-size: 10px;
         margin: 6px;
     }
+
+//                                      Work Section
+    .work-card{
+        width: 96vw;
+        height: 97vh;
+    }
+// title animation
+    .text{
+      font-size: 45px; 
+    }
+    svg{
+        margin-top: 52px;
+    }
+
+// projects flex
+    .projects-flex {
+        padding: 6px;
+    }
+    .project-container {
+        width: 94%;
+        height: auto;
+        padding: 6px;
+        &:hover{
+            width: 98%;
+            height: auto;
+            .proj-title-line{
+                width: 70%;
+            }
+            .demo-img{
+                webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+                filter: blur(4px);
+                transition: 0.2s ease-in-out;
+            }
+            .proj-btn{
+                display: block;
+            }
+        }
+    }
+    .project-innerwrap {
+        flex-direction: column;
+    }
+    .proj-info {
+        width: 100%;
+        padding: 8px;
+        .proj-title {
+            font-size: 26px;
+        }
+        .proj-title-line {
+            height: 7px;
+            width: 7px;
+        }
+        .proj-stack {
+            font-size: 14px;
+        }
+        .proj-detail {
+            padding-top: 10px;
+            font-size: 12px;
+        }
+    }
+    .proj-demo {
+        width: 100%;
+        padding: 8px;
+        .demo-img{
+            height: 110px;
+            width: 220px
+        }
+        .proj-demo-buttons{
+            .proj-btn{
+                min-width: 64px;
+                padding: 4px;
+                margin: 4px;
+            }
+        }   
+    }
+
+//                                    Contact Section
+
+
 }
 
