@@ -109,7 +109,7 @@ a {
 
 .intro {
   position: absolute;
-  top: 12vh;
+  top: 22vh;
   left: 14vw;
 }
 .intro .small {
@@ -199,7 +199,7 @@ a {
 }
 
 .btn {
-  background-color: #301B3F;
+  background-color: rgb(22, 59, 91);
   color: rgb(224, 214, 214);
   text-decoration: none;
   border-radius: 60px;
@@ -238,8 +238,8 @@ a {
 .button {
   position: fixed;
   display: flex;
-  bottom: 22vh;
-  left: 14vw;
+  top: 74vh;
+  left: 18vw;
 }
 .button button {
   background-color: rgba(29, 26, 26, 0.37);
@@ -342,6 +342,7 @@ a {
 .details-paragraph {
   margin: 40px 0px;
   font-size: 22px;
+  font-weight: 600;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 }
@@ -404,7 +405,7 @@ a {
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -418,15 +419,13 @@ a {
 
 .btn-11 {
   border: none;
-  background: rgb(251, 33, 117);
-  background: linear-gradient(0deg, rgb(211, 227, 211) 0%, rgb(188, 16, 240) 100%);
-  color: #fff;
+  background: inherit;
+  color: rgb(20, 18, 18);
   overflow: hidden;
 }
 
 .btn-11:hover {
   text-decoration: none;
-  color: #fff;
 }
 
 .btn-11:before {
@@ -940,5 +939,16 @@ svg {
     margin: 10px;
     width: 120px;
     height: 42px;
+  }
+  .about-card {
+    flex-direction: column;
+    height: 92vh;
+    bottom: 5vh;
+    overflow-y: scroll;
+  }
+  .about-card .details {
+    width: 100%;
+    height: auto;
+    padding: 4px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -153,7 +153,7 @@ a{
 
 .intro{
     position: absolute;
-    top: 12vh;
+    top: 22vh;
     left: 14vw;
     .small{
         font-size: 4rem;
@@ -253,7 +253,7 @@ a{
 }
 
 .btn {
-    background-color: $dark-sub1;
+    background-color: rgb(22, 59, 91);
     color: rgb(224, 214, 214);
     text-decoration: none;
     border-radius: 60px;
@@ -297,8 +297,8 @@ a{
 .button{
     position: fixed;
     display: flex;
-    bottom: 22vh;
-    left: 14vw;
+    top: 74vh;
+    left: 18vw;
     
     
     button{
@@ -353,8 +353,6 @@ a{
     display: flex;
     overflow: hidden;
 }
-
-
 .sec2{
     z-index: -1;
 }
@@ -418,6 +416,7 @@ a{
 .details-paragraph{
   margin: 40px 0px;
   font-size: 22px;
+  font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
@@ -490,30 +489,26 @@ $others: green,yellow,blue,pink;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
   margin: 32px;
   margin-right: 0;
 }
 
 .btn-11 {
-  border: none;
-  background: rgb(251,33,117);
-    background: linear-gradient(0deg, $frontend 0%, rgb(188, 16, 240) 100%);
-    color: #fff;
+    border: none;
+    background: inherit;
+    color: rgb(20, 18, 18);
     overflow: hidden;
 }
 .btn-11:hover {
     text-decoration: none;
-    color: #fff;
 }
 .btn-11:before {
     position: absolute;
@@ -627,7 +622,7 @@ $dash-space: $dash * ($max - 1) + $dash-gap * $max;
 $time: 8s;
 $time-step: calc($time/$max);
 
-        /* Main styles */
+/* Main styles */
 
 .text {
   fill: none;
@@ -1042,6 +1037,21 @@ svg {
             margin: 10px;
             width: 120px;
             height: 42px;
+        }
+    }
+
+
+//                                       About Me Section
+
+    .about-card{
+        flex-direction: column;
+        height: 92vh;
+        bottom: 5vh;
+        overflow-y: scroll;
+        .details{
+            width: 100%;
+            height: auto;
+            padding: 4px;
         }
     }
 }
