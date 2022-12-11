@@ -1043,8 +1043,13 @@ svg {
 // details 
     .about-card{
         flex-direction: column;
-        height: 92vh;
-        bottom: 44px;
+        height: 94vh;
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        top: 0;
+        bottom: 0;
+        margin: auto;
         overflow-y: scroll;
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
         scrollbar-width: none;     /* Firefox */
