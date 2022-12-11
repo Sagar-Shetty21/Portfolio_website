@@ -377,8 +377,6 @@ a{
   margin: 0;
   text-align: right;
   font-family: inherit;
-  font-weight: 300;
-  font-size: 40px;
   color: #080808;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -1042,17 +1040,58 @@ svg {
 
 
 //                                       About Me Section
-
+// details 
     .about-card{
         flex-direction: column;
         height: 92vh;
-        bottom: 5vh;
+        bottom: 44px;
         overflow-y: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;     /* Firefox */
+        &::-webkit-scrollbar { 
+            display: none;          /* Safari and Chrome */
+        }
+        background: transparent;
         .details{
             width: 100%;
             height: auto;
-            padding: 4px;
+            padding: 6px;
+            border-radius: 0;
         }
+        .details-heading {
+            h1{
+                text-align: left;
+                padding-left: 15px;
+            }
+            h1:before{
+                right: auto;
+                left: 0;
+            }
+        }
+        .details-paragraph {
+            margin: 0;
+            font-size: 16px;
+            p{
+                margin-top: 8px;
+            }
+        }
+        .abt-contact-button {
+            margin: 24px;
+            .button1{
+                width: 120px;
+                height: 28px;
+                font-size: 12px;
+            }
+        }
+    }
+// skills buttons
+    .about-card > .skills{
+        width: 100%;
+        height: auto;
+        padding: 6px;
+    }
+    .skills-buttons{
+        padding: 6px;
     }
 }
 

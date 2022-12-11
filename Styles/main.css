@@ -303,8 +303,6 @@ a {
   margin: 0;
   text-align: right;
   font-family: inherit;
-  font-weight: 300;
-  font-size: 40px;
   color: #080808;
   transition: all 0.4s ease 0s;
 }
@@ -943,12 +941,50 @@ svg {
   .about-card {
     flex-direction: column;
     height: 92vh;
-    bottom: 5vh;
+    bottom: 44px;
     overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    background: transparent;
+  }
+  .about-card::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
   }
   .about-card .details {
     width: 100%;
     height: auto;
-    padding: 4px;
+    padding: 6px;
+    border-radius: 0;
+  }
+  .about-card .details-heading h1 {
+    text-align: left;
+    padding-left: 15px;
+  }
+  .about-card .details-heading h1:before {
+    right: auto;
+    left: 0;
+  }
+  .about-card .details-paragraph {
+    margin: 0;
+    font-size: 16px;
+  }
+  .about-card .details-paragraph p {
+    margin-top: 8px;
+  }
+  .about-card .abt-contact-button {
+    margin: 24px;
+  }
+  .about-card .abt-contact-button .button1 {
+    width: 120px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .about-card > .skills {
+    width: 100%;
+    height: auto;
+    padding: 6px;
+  }
+  .skills-buttons {
+    padding: 6px;
   }
 }/*# sourceMappingURL=main.css.map */
