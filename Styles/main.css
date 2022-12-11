@@ -885,6 +885,7 @@ svg {
     transform: none;
   }
   .intro {
+    top: 24vh;
     left: 4vw;
   }
   .intro .small {
@@ -895,5 +896,47 @@ svg {
   }
   .intro .bigger {
     font-size: 4.2rem;
+  }
+  .social {
+    flex-direction: row;
+    transform: none;
+    align-items: center;
+    right: auto;
+    margin-left: 0.6rem;
+    margin-top: 18px;
+  }
+  .btn {
+    background-color: #022449;
+    margin: 8px;
+    height: 40px;
+    border-radius: 40px;
+    width: 40px;
+  }
+  .btn:hover {
+    transform: none;
+  }
+  .icon {
+    font-size: 25px;
+    margin: -5px;
+  }
+  .icon .text {
+    display: none;
+  }
+  .button {
+    left: 0;
+    bottom: 26vh;
+  }
+  .button button {
+    font-size: 18px;
+  }
+  .button .abt-btn {
+    margin: 10px;
+    width: 120px;
+    height: 42px;
+  }
+  .button .res-btn {
+    margin: 10px;
+    width: 120px;
+    height: 42px;
   }
 }/*# sourceMappingURL=main.css.map */

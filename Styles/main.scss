@@ -219,7 +219,7 @@ a{
     color: rgb(142, 194, 218);
 }
 
-
+//  social profile links
 .social{
     position: absolute;
     top: 50vh;
@@ -282,7 +282,6 @@ a{
     font-family: inherit;
     font-size: 22px;
   }
-
 // Hover effect on social button
   .btn:hover {
     max-width: 300px;
@@ -293,7 +292,7 @@ a{
   }
 
 
-//   Buttons
+// Buttons
 
 .button{
     position: fixed;
@@ -956,7 +955,7 @@ svg {
 
 @media screen and (max-width: 500px) {
     
-//                      Navigation Bar
+//                             Navigation Bar
     .fixed{
         bottom: 0;
         top: auto;
@@ -982,8 +981,11 @@ svg {
 
 
 
-//                     Home Section
+//                           Home Section
+
+//  intro text
     .intro{
+        top: 24vh;
         left: 4vw;
         .small{
             font-size: 2.2rem;
@@ -993,6 +995,51 @@ svg {
         }
         .bigger{
             font-size: 4.2rem;
+        }
+    }
+//  social profile links
+    .social{
+        flex-direction: row;
+        transform: none;
+        align-items: center;
+        right: auto;
+        margin-left: 0.6rem;
+        margin-top: 18px;
+
+    }
+    .btn{
+        background-color: #022449;
+        margin: 8px;
+        height: 40px;
+        border-radius: 40px;
+        width: 40px;
+    }
+    .btn:hover{
+        transform: none;
+    }
+    .icon{
+        font-size: 25px;
+        margin: -5px;
+        .text{
+            display: none;
+        }
+    }
+// buttons
+    .button{
+        left: 0;
+        bottom: 26vh;
+        button{
+            font-size: 18px;
+        }
+        .abt-btn{
+            margin: 10px;
+            width: 120px;
+            height: 42px;
+        }
+        .res-btn{
+            margin: 10px;
+            width: 120px;
+            height: 42px;
         }
     }
 }
