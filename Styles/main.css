@@ -903,7 +903,8 @@ svg {
     align-items: center;
     right: auto;
     margin-left: 0.6rem;
-    margin-top: 18px;
+    bottom: auto;
+    top: 55vh;
   }
   .btn {
     background-color: #022449;
@@ -924,7 +925,8 @@ svg {
   }
   .button {
     left: 0;
-    bottom: 26vh;
+    bottom: auto;
+    top: 65vh;
   }
   .button button {
     font-size: 18px;

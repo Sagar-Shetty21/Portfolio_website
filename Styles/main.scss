@@ -1004,7 +1004,8 @@ svg {
         align-items: center;
         right: auto;
         margin-left: 0.6rem;
-        margin-top: 18px;
+        bottom: auto;
+        top: 55vh;
 
     }
     .btn{
@@ -1027,7 +1028,8 @@ svg {
 // buttons
     .button{
         left: 0;
-        bottom: 26vh;
+        bottom: auto;
+        top: 65vh;
         button{
             font-size: 18px;
         }
