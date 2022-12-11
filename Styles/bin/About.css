@@ -10,6 +10,7 @@
   margin: auto;
   background-color: aqua;
   display: flex;
+  overflow: hidden;
 }
 
 .sec2 {

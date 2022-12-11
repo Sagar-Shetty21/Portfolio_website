@@ -11,7 +11,9 @@
     margin: auto;
     background-color: aqua;
     display: flex;
+    overflow: hidden;
 }
+
 
 .sec2{
     z-index: -1;
@@ -27,6 +29,7 @@
     //position: absolute;
     border-radius: 20px 0 0 20px;
     padding: 35px;
+    
 }
 
 
