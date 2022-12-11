@@ -600,7 +600,7 @@ svg {
   width: 62%;
 }
 .project-container:hover .proj-title-line {
-  width: 320px;
+  width: 70%;
   transition: 0.4s ease-in-out;
 }
 
@@ -947,6 +947,7 @@ svg {
     top: 0;
     bottom: 0;
     margin: auto;
+    padding-bottom: 32px;
     overflow-y: scroll;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
@@ -1009,5 +1010,72 @@ svg {
     padding: 3px 8px;
     font-size: 10px;
     margin: 6px;
+  }
+  .work-card {
+    width: 96vw;
+    height: 97vh;
+  }
+  .text {
+    font-size: 45px;
+  }
+  svg {
+    margin-top: 52px;
+  }
+  .projects-flex {
+    padding: 6px;
+  }
+  .project-container {
+    width: 94%;
+    height: auto;
+    padding: 6px;
+  }
+  .project-container:hover {
+    width: 98%;
+    height: auto;
+  }
+  .project-container:hover .proj-title-line {
+    width: 70%;
+  }
+  .project-container:hover .demo-img {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+    transition: 0.2s ease-in-out;
+  }
+  .project-container:hover .proj-btn {
+    display: block;
+  }
+  .project-innerwrap {
+    flex-direction: column;
+  }
+  .proj-info {
+    width: 100%;
+    padding: 8px;
+  }
+  .proj-info .proj-title {
+    font-size: 26px;
+  }
+  .proj-info .proj-title-line {
+    height: 7px;
+    width: 7px;
+  }
+  .proj-info .proj-stack {
+    font-size: 14px;
+  }
+  .proj-info .proj-detail {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  .proj-demo {
+    width: 100%;
+    padding: 8px;
+  }
+  .proj-demo .demo-img {
+    height: 110px;
+    width: 220px;
+  }
+  .proj-demo .proj-demo-buttons .proj-btn {
+    min-width: 64px;
+    padding: 4px;
+    margin: 4px;
   }
 }/*# sourceMappingURL=main.css.map */
