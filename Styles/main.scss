@@ -363,7 +363,7 @@ a{
 .details{
     height: 100%;
     width: 42%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     //position: absolute;
     border-radius: 20px 0 0 20px;
     padding: 35px;
@@ -436,12 +436,12 @@ a{
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 600;
+    letter-spacing: 1.8px;
+    font-weight: 800;
     color: #000;
-    background-color: antiquewhite;
+    background-color: inherit;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -1220,6 +1220,10 @@ svg {
     .input{
         font-size: 14px;   
     }
+    .input:focus ~ .placeholder,
+    .input:not(:placeholder-shown) ~ .placeholder {
+        transform: translateY(-22px) translateX(17px) scale(0.75);
+    }
     .msg-input{
         height: 240%;
     }
@@ -1234,3 +1238,303 @@ svg {
     }
 }
 
+
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 500px) {
+    
+    //                             Navigation Bar
+        .fixed{
+            /* bottom: 0;
+            top: auto; */
+            .nav-bar{
+                /* width: 95%;
+                min-width: auto;
+                height: 80%;
+                background: rgb(21, 40, 52);
+                border-radius: 8px;
+                opacity: 80%; */
+                a{
+                    //font-size: 1.4rem;
+                }
+                a:hover{
+                    //transform: none;
+                }
+            }
+            .nav-bar:hover{
+                //opacity: 100;
+                //transform: none;
+            }
+        }
+    
+    
+    
+    //                           Home Section
+    
+    //  intro text
+        .intro{
+            top: 24vh;
+            left: 8vw;
+            .small{
+                font-size: 3rem;
+            }
+            .big{
+                font-size: 4.6rem;
+            }
+            .bigger{
+                font-size: 5.4rem;
+            }
+        }
+    //  social profile links
+        .social{
+            flex-direction: row;
+            transform: none;
+            align-items: center;
+            right: auto;
+            margin-left: 12vw;
+            bottom: auto;
+            top: 55vh;
+    
+        }
+        .btn{
+            background-color: #022449;
+            margin: 22px;
+            margin-left: 6vw;
+            height: 64px;
+            border-radius: 40px;
+            width: 64px;
+        }
+        .btn:hover{
+            transform: none;
+        }
+        .icon{
+            font-size: 44px;
+            margin: -5px;
+            .text{
+                display: none;
+            }
+        }
+    // buttons
+        .button{
+            left: 16vw;
+            bottom: auto;
+            top: 65vh;
+            margin: 36px;
+            button{
+                font-size: 22px;
+            }
+            .abt-btn{
+                margin: 14px;
+                width: 140px;
+                height: 54px;
+                margin-right: 8vw;
+            }
+            .res-btn{
+                margin: 14px;
+                width: 140px;
+                height: 54px;
+            }
+        }
+    
+    
+    //                                       About Me Section
+    // details 
+        .about-card{
+            flex-direction: column;
+            height: 94vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 32px;
+            overflow-y: scroll;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;     /* Firefox */
+            &::-webkit-scrollbar { 
+                display: none;          /* Safari and Chrome */
+            }
+            background: transparent;
+            .details{
+                width: 100%;
+                height: auto;
+                padding: 12px;
+                border-radius: 20px 20px 0 0;
+            }
+            .details-heading {
+                h1{
+                    font-size: 28px;
+                    text-align: left;
+                    padding-left: 32px;
+                    padding-bottom: 4px;
+                }
+                h1:before{
+                    right: auto;
+                    left: 0;
+                }
+            }
+            .details-paragraph {
+                margin: 14px;
+                font-size: 20px;
+                p{
+                    margin-top: 14px;
+                }
+            }
+            .abt-contact-button {
+                margin: 38px;
+                .button1{
+                    width: 164px;
+                    height: 36px;
+                    font-size: 16px;
+                }
+            }
+        }
+    // skills buttons
+        .about-card > .skills{
+            width: 100%;
+            height: auto;
+            padding: 6px;
+            border-radius: 0 0 20px 20px;
+        }
+        .skills-heading{
+            h1{
+                font-size: 28px;
+                padding: 0;
+                padding-bottom: 4px;
+                text-align:right;
+                padding-right: 52px;
+            }
+            h1:before{
+                width: 448px;
+                right: 0;
+                left: auto;
+            }
+        }
+        .skills-buttons{
+            padding: 22px;
+        }
+    // skills buttons
+        .custom-btn{
+            width: auto;
+            height: 42px;
+            padding: 5px 12px;
+            font-size: 16px;
+            margin: 12px;
+        }
+    
+    //                                      Work Section
+        .work-card{
+            width: 96vw;
+            height: 85vh;
+        }
+    // title animation
+        .text{
+          font-size: 45px; 
+        }
+        svg{
+            margin-top: 52px;
+        }
+    
+    // projects flex
+        .projects-flex {
+            padding: 6px;
+        }
+        .project-container {
+            width: 94%;
+            height: auto;
+            padding: 6px;
+            &:hover{
+                width: 98%;
+                height: auto;
+                .proj-title-line{
+                    width: 70%;
+                }
+                .demo-img{
+                    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+                    filter: blur(4px);
+                    transition: 0.2s ease-in-out;
+                }
+                .proj-btn{
+                    display: block;
+                }
+            }
+        }
+        .project-innerwrap {
+            flex-direction: column;
+        }
+        .proj-info {
+            width: 100%;
+            padding: 8px;
+            .proj-title {
+                font-size: 26px;
+            }
+            .proj-title-line {
+                height: 7px;
+                width: 7px;
+            }
+            .proj-stack {
+                font-size: 14px;
+            }
+            .proj-detail {
+                padding-top: 10px;
+                font-size: 12px;
+            }
+        }
+        .proj-demo {
+            width: 100%;
+            padding: 8px;
+            .demo-img{
+                height: 110px;
+                width: 220px
+            }
+            .proj-demo-buttons{
+                .proj-btn{
+                    min-width: 64px;
+                    padding: 4px;
+                    margin: 4px;
+                }
+            }   
+        }
+    
+    //                                    Contact Section
+    
+        .contact-layout{
+            min-width: 100px;
+            width: 96%;
+            padding: 1.6%;
+        }
+        .form {
+            padding: 14px;
+        }
+        .title {
+            font-size: 24px;
+            margin-top: 12px;
+        }
+        .subtitle{
+            font-size: 12px;
+            margin-top: 6px;
+        }
+        .input-container{
+            height: 38px;
+        }
+        .ic1{
+            margin-top: 26px;
+        }
+        .ic2 {
+            margin-top: 22px;
+        }
+        .input{
+            font-size: 14px;   
+        }
+        .msg-input{
+            height: 240%;
+        }
+        .placeholder{
+            top: 13px;
+            left: 12px;
+        }
+        .submit{
+            height: 38px;
+            font-size: 16px;
+            margin-top: 82px;
+        }
+    }
