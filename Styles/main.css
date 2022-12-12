@@ -1075,4 +1075,44 @@ svg {
     padding: 4px;
     margin: 4px;
   }
+  .contact-layout {
+    min-width: 100px;
+    width: 96%;
+    padding: 1.6%;
+  }
+  .form {
+    padding: 14px;
+  }
+  .title {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+  .subtitle {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  .input-container {
+    height: 38px;
+  }
+  .ic1 {
+    margin-top: 26px;
+  }
+  .ic2 {
+    margin-top: 22px;
+  }
+  .input {
+    font-size: 14px;
+  }
+  .msg-input {
+    height: 240%;
+  }
+  .placeholder {
+    top: 13px;
+    left: 12px;
+  }
+  .submit {
+    height: 38px;
+    font-size: 16px;
+    margin-top: 82px;
+  }
 }/*# sourceMappingURL=main.css.map */
