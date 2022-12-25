@@ -588,13 +588,13 @@ svg {
   height: 45vh;
   border-radius: 8px;
   margin: 6px;
-  background: linear-gradient(to right, black, white);
-  padding: 14px;
+  background: transparent;
+  padding: 8px;
 }
 
 .project-container:hover {
   box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
-  background: linear-gradient(to right, white, black);
+  background: transparent;
   transition: 0.4s ease-in-out;
   height: 47vh;
   width: 62%;
@@ -607,7 +607,7 @@ svg {
 .project-innerwrap {
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, white, black);
+  background: transparent;
   display: flex;
 }
 
