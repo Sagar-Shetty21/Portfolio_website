@@ -531,7 +531,7 @@ a {
 }
 
 /* Main styles */
-.text {
+.text-work {
   fill: none;
   stroke-width: 3;
   stroke-linejoin: round;
@@ -540,22 +540,22 @@ a {
   -webkit-animation: stroke 8s infinite linear;
   animation: stroke 8s infinite linear;
 }
-.text:nth-child(4n+1) {
+.text-work:nth-child(4n+1) {
   stroke: #e2dfeb;
   -webkit-animation-delay: -2s;
   animation-delay: -2s;
 }
-.text:nth-child(4n+2) {
+.text-work:nth-child(4n+2) {
   stroke: rgba(3, 20, 37, 0.9960784314);
   -webkit-animation-delay: -4s;
   animation-delay: -4s;
 }
-.text:nth-child(4n+3) {
+.text-work:nth-child(4n+3) {
   stroke: #ece4f4;
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
 }
-.text:nth-child(4n+4) {
+.text-work:nth-child(4n+4) {
   stroke: #010807;
   -webkit-animation-delay: -8s;
   animation-delay: -8s;
@@ -585,7 +585,8 @@ svg {
 
 .project-container {
   width: 60%;
-  height: 45vh;
+  min-width: 1050px;
+  height: 340px;
   border-radius: 8px;
   margin: 6px;
   background: transparent;
@@ -600,7 +601,8 @@ svg {
   box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
   background: transparent;
   transition: 0.4s ease-in-out;
-  height: 47vh;
+  height: 345px;
+  min-width: 1055px;
   width: 62%;
 }
 .project-container:hover .proj-title-line {
@@ -1016,8 +1018,8 @@ svg {
     width: 96vw;
     height: 85vh;
   }
-  .text {
-    font-size: 45px;
+  .text-work {
+    font-size: 38px;
   }
   svg {
     margin-top: 52px;
@@ -1026,12 +1028,14 @@ svg {
     padding: 6px;
   }
   .project-container {
+    min-width: 140px;
     width: 94%;
     height: auto;
     padding: 6px;
   }
   .project-container:hover {
-    width: 98%;
+    width: 96%;
+    min-width: 143px;
     height: auto;
   }
   .project-container:hover .proj-title-line {
@@ -1279,10 +1283,10 @@ svg {
   }
   .work-card {
     width: 96vw;
-    height: 85vh;
+    height: 87vh;
   }
-  .text {
-    font-size: 45px;
+  .text-work {
+    font-size: 48px;
   }
   svg {
     margin-top: 52px;
@@ -1291,34 +1295,33 @@ svg {
     padding: 6px;
   }
   .project-container {
-    width: 94%;
-    height: auto;
-    padding: 6px;
+    min-width: 460px;
+    width: 82%;
+    height: 260px;
+    padding: 8px;
   }
   .project-container:hover {
-    width: 98%;
-    height: auto;
+    width: 84%;
+    min-width: 464px;
+    height: 265px;
   }
   .project-container:hover .proj-title-line {
     width: 70%;
   }
   .project-container:hover .demo-img {
-    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    webkit-filter: blur(4px);
     filter: blur(4px);
     transition: 0.2s ease-in-out;
   }
   .project-container:hover .proj-btn {
     display: block;
   }
-  .project-innerwrap {
-    flex-direction: column;
-  }
   .proj-info {
     width: 100%;
     padding: 8px;
   }
   .proj-info .proj-title {
-    font-size: 26px;
+    font-size: 30px;
   }
   .proj-info .proj-title-line {
     height: 7px;

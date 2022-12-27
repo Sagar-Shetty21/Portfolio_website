@@ -279,7 +279,7 @@ a{
   .text {
     white-space: nowrap;
     padding-right: 20px;
-    font-family: inherit;
+    font-family:inherit;
     font-size: 22px;
   }
 // Hover effect on social button
@@ -620,7 +620,7 @@ $time-step: calc($time/$max);
 
 /* Main styles */
 
-.text {
+.text-work {
   fill: none;
   stroke-width: 3;
   stroke-linejoin: round;
@@ -671,7 +671,8 @@ svg {
 
 .project-container{
     width: 60%;
-    height: 45vh;
+    min-width: 1050px;
+    height: 340px;
     border-radius: 8px;
     margin: 6px;
     background: transparent;
@@ -694,7 +695,8 @@ svg {
   box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
   background: transparent;
   transition: 0.4s ease-in-out;
-  height: 47vh;
+  height: 345px;
+  min-width: 1055px;
   width: 62%;
 }
 
@@ -1128,8 +1130,8 @@ svg {
         height: 85vh;
     }
 // title animation
-    .text{
-      font-size: 45px; 
+    .text-work{
+      font-size: 38px; 
     }
     svg{
         margin-top: 52px;
@@ -1140,11 +1142,13 @@ svg {
         padding: 6px;
     }
     .project-container {
+        min-width: 140px;
         width: 94%;
         height: auto;
         padding: 6px;
         &:hover{
-            width: 98%;
+            width: 96%;
+            min-width: 143px;
             height: auto;
             .proj-title-line{
                 width: 70%;
@@ -1430,11 +1434,11 @@ svg {
     //                                      Work Section
         .work-card{
             width: 96vw;
-            height: 85vh;
+            height: 87vh;
         }
     // title animation
-        .text{
-          font-size: 45px; 
+        .text-work{
+          font-size: 48px; 
         }
         svg{
             margin-top: 52px;
@@ -1445,17 +1449,19 @@ svg {
             padding: 6px;
         }
         .project-container {
-            width: 94%;
-            height: auto;
-            padding: 6px;
+            min-width: 460px;
+            width: 82%;
+            height: 260px;
+            padding: 8px;
             &:hover{
-                width: 98%;
-                height: auto;
+                width: 84%;
+                min-width: 464px;
+                height: 265px;;
                 .proj-title-line{
                     width: 70%;
                 }
                 .demo-img{
-                    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+                    webkit-filter: blur(4px); // Chrome, Safari, Opera 
                     filter: blur(4px);
                     transition: 0.2s ease-in-out;
                 }
@@ -1464,14 +1470,11 @@ svg {
                 }
             }
         }
-        .project-innerwrap {
-            flex-direction: column;
-        }
         .proj-info {
             width: 100%;
             padding: 8px;
             .proj-title {
-                font-size: 26px;
+                font-size: 30px;
             }
             .proj-title-line {
                 height: 7px;
