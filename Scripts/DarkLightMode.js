@@ -38,6 +38,15 @@ function changeMode(){
 
 
 
+function toDarkMode() {
+
+}
+
+
+function toLightMode() {
+    
+}
+
 
 
 
