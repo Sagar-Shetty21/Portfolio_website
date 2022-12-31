@@ -18,6 +18,17 @@ $light-sub2: #59CE8F;
 $light-text: #000000;
 $box-shadow: 0 3px 15px rgba(0,0,0,.3);
 
+
+$light-intro-small: green;
+$light-intro-big: #96FFFF;
+$light-intro-big-name: #41B3A3;
+$light-intro-bigger-1: rgba(182, 239, 182, 0.868);
+$light-intro-bigger-2: rgb(166, 234, 228);
+$light-intro-bigger-3: rgb(142, 194, 218);
+$light-social-button-bg: rgb(22, 59, 91);
+$light-social-button: rgb(224, 214, 214);
+$light-intro-button-bg: rgba(29, 26, 26, 0.37);
+
 *{
     margin: 0;
     padding: 0; 
@@ -158,15 +169,15 @@ a{
     .small{
         font-size: 4rem;
         opacity: 0.6;
-        color: #e1afa1;
+        color: $light-intro-small;
         font-weight: 100;
     }
     .big{
         font-size: 6rem;
-        color: #96FFFF;
+        color: $light-intro-big;
         font-weight: 100;
         .name{
-            color:#41B3A3;
+            color: $light-intro-big-name;
         }
     }
     .bigger{
@@ -208,15 +219,15 @@ a{
 }
 
 .web-developer{
-    color: rgba(182, 239, 182, 0.868);
+    color: $light-intro-bigger-1;
 }
 
 .programmer{
-    color: rgb(166, 234, 228);
+    color: $light-intro-bigger-2;
 }
 
 .problem-solver{
-    color: rgb(142, 194, 218);
+    color: $light-intro-bigger-3;
 }
 
 //  social profile links
@@ -253,8 +264,8 @@ a{
 }
 
 .btn {
-    background-color: rgb(22, 59, 91);
-    color: rgb(224, 214, 214);
+    background-color: $light-social-button-bg;
+    color: $light-social-button;
     text-decoration: none;
     border-radius: 60px;
     margin: 15px;
@@ -302,7 +313,7 @@ a{
     
     
     button{
-        background-color: rgba(29, 26, 26, 0.37);
+        background-color: rgba(26, 27, 29, 0.37);
         border:none;
         font-family: inherit;
         font-size: 26px;

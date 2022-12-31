@@ -115,7 +115,7 @@ a {
 .intro .small {
   font-size: 4rem;
   opacity: 0.6;
-  color: #e1afa1;
+  color: green;
   font-weight: 100;
 }
 .intro .big {
@@ -242,7 +242,7 @@ a {
   left: 18vw;
 }
 .button button {
-  background-color: rgba(29, 26, 26, 0.37);
+  background-color: rgba(26, 27, 29, 0.37);
   border: none;
   font-family: inherit;
   font-size: 26px;
