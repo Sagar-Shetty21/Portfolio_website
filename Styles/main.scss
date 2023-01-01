@@ -1,33 +1,109 @@
-$lcolor1: #022449;
-$lcolor2: #558DCA;
-$lcolor3: #96FFFF;
-$lcolor4: #C8EFF9;
-$lcolor5: #F27D42;
-$lcolor6: #41B3A3;
-$Lcolor7: #C38D9E;
-$lcolor8: #E8A87C;
-$lcolor9: #E27D60;
 
-$dark-main: #151515;
-$dark-sub1: #301B3F;
-$dark-sub2: #3C415C;
-$dark-text: #B4A5A5;
-$light-main: #E8F9FD;
-$light-sub1: #FF1E00;
-$light-sub2: #59CE8F;
-$light-text: #000000;
-$box-shadow: 0 3px 15px rgba(0,0,0,.3);
+:root {
+    --navbar-bg: #3C415C;
+    --navbar-shadow: rgb(158, 92, 205);
+    //home section
+    --intro-small: green;
+    --intro-big: #96FFFF;
+    --intro-big-name: #41B3A3;
+    --intro-bigger-1: rgba(182, 239, 182, 0.868);
+    --intro-bigger-2: rgb(166, 234, 228);
+    --intro-bigger-3: rgb(142, 194, 218);
+    --social-button-bg: rgb(14, 201, 179);
+    --social-button: rgb(84, 34, 84);
+    --social-button-hover:  rgb(104, 70, 131);
+    --intro-button-bg: rgba(91, 213, 140, 0.636);
+    --intro-button-bg-hover: rgba(35, 235, 45, 0.875);
+    --intro-button-bg-hover-shadow: rgba(133, 240, 11, 0.814);
+    //about section
+    --about-card-bg: aqua;
+    --about-card-text: black;
+    --about-card-details-bg: rgb(152, 246, 182);
+    --about-card-details-button-bg: inherit;
+    --about-card-details-button-bg-hover: #2EE59D;
+    --about-card-skills-bg: rgb(171, 243, 242);
+    --about-card-skills-button-bg: inherit;
+    //work section
+    --work-card-bg: rgba(50, 48, 53, 0.537);
+    --work-title-colors: #e2dfeb, #031425fe, #ece4f4, #010807;
+    --proj-cont-bg: transparent;
+    --proj-cont-bg-hover: transparent;
+    --proj-cont-inner: transparent;
+    --proj-title-line: aquamarine;
+    --proj-stack: rgb(85, 79, 79);
+    --proj-detail: rgb(28, 60, 105);
+    --proj-btn: aqua;
+    //contact section
+    --contact-card-bg: transparent;
+    --contact-form-bg: #15172b;
+    --contact-form-title: #eee;
+    --contact-form-input-bg: #303245;
+    --contact-form-input-text: #eee;
+    --contact-form-input-placeholder: #65657b;
+    --contact-form-input-placeholder-focus: #dc2f55;
+    --contact-form-submit-bg: #08d;
+    --contact-form-submit-text: #eee;
+    --contact-form-submit-active-bg: rgb(3, 14, 68);
 
 
-$light-intro-small: green;
-$light-intro-big: #96FFFF;
-$light-intro-big-name: #41B3A3;
-$light-intro-bigger-1: rgba(182, 239, 182, 0.868);
-$light-intro-bigger-2: rgb(166, 234, 228);
-$light-intro-bigger-3: rgb(142, 194, 218);
-$light-social-button-bg: rgb(22, 59, 91);
-$light-social-button: rgb(224, 214, 214);
-$light-intro-button-bg: rgba(29, 26, 26, 0.37);
+
+
+
+
+
+
+    --navbar-bg: #3C415C;
+    --navbar-shadow: rgb(158, 92, 205);
+    //home section
+    --intro-small: #fbf8cc79;
+    --intro-big: #a3c4f3;
+    --intro-big-name: #41B3A3;
+    --intro-bigger-1: #90dbf4;
+    --intro-bigger-2: #8eecf5;
+    --intro-bigger-3: #98f5e1;
+    --social-button-bg: #a6cbd3;
+    --social-button: #231942b7;
+    --social-button-hover: #231942;
+    --intro-button-bg: #0e00003b;
+    --intro-button-bg-hover: transparent;
+    --intro-button-bg-hover-shadow: #e0e1dd;
+    //about section
+    --about-card-bg: aqua;
+    --about-card-text: black;
+    --about-card-details-bg: rgb(152, 246, 182);
+    --about-card-details-button-bg: inherit;
+    --about-card-details-button-bg-hover: #27d430;
+    --about-card-skills-bg: rgb(171, 243, 242);
+    --about-card-skills-button-bg: inherit;
+    //work section
+    --work-card-bg: #6f6fdd73;
+    --work-title-color1: #8fcaee;
+    --work-title-color2: #94f1c2;
+    --proj-cont-bg: #6f6fdde2;
+    --proj-cont-bg-hover: #6f6fdd;
+    --proj-cont-inner: rgb(134, 134, 234);
+    --proj-title: rgb(15, 29, 63);
+    --proj-title-line: rgb(158, 237, 211);
+    --proj-stack: rgba(79, 5, 101, 0.801);
+    --proj-detail: rgb(53, 11, 205);
+    --proj-btn: aqua;
+    //contact section
+    --contact-card-bg: transparent;
+    --contact-form-bg: #15172b;
+    --contact-form-title: #eee;
+    --contact-form-input-bg: #303245;
+    --contact-form-input-text: #eee;
+    --contact-form-input-placeholder: #65657b;
+    --contact-form-input-placeholder-focus: #dc2f55;
+    --contact-form-submit-bg: #08d;
+    --contact-form-submit-text: #eee;
+    --contact-form-submit-active-bg: rgb(3, 14, 68);
+}
+    
+
+
+
+
 
 *{
     margin: 0;
@@ -51,7 +127,6 @@ $light-intro-button-bg: rgba(29, 26, 26, 0.37);
 body{
     font-family: 'Alumni Sans Inline One', cursive;
     font-size: 1.2;
-    color: $light-text;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     width: 100vw;
@@ -91,13 +166,13 @@ a{
         min-width: 430px;
         height: inherit;
         opacity: 30%;
-        background-color: $dark-sub2;
+        background-color: var(--navbar-bg);
         border-radius : 0 0 30px 30px;
         display:inline-flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        box-shadow: 0px 5px 15px rgb(158, 92, 205);
+        box-shadow: 0px 5px 15px var(--navbar-shadow);
         a{
             font-size: 2rem;
             padding: 5px 12px;
@@ -169,15 +244,15 @@ a{
     .small{
         font-size: 4rem;
         opacity: 0.6;
-        color: $light-intro-small;
+        color: var(--intro-small);
         font-weight: 100;
     }
     .big{
         font-size: 6rem;
-        color: $light-intro-big;
+        color: var(--intro-big);
         font-weight: 100;
         .name{
-            color: $light-intro-big-name;
+            color: var(--intro-big-name);
         }
     }
     .bigger{
@@ -219,15 +294,15 @@ a{
 }
 
 .web-developer{
-    color: $light-intro-bigger-1;
+    color: var(--intro-bigger-1);
 }
 
 .programmer{
-    color: $light-intro-bigger-2;
+    color: var(--intro-bigger-2);
 }
 
 .problem-solver{
-    color: $light-intro-bigger-3;
+    color: var(--intro-bigger-3);
 }
 
 //  social profile links
@@ -264,8 +339,8 @@ a{
 }
 
 .btn {
-    background-color: $light-social-button-bg;
-    color: $light-social-button;
+    background-color: var(--social-button-bg);
+    color: var(--social-button);
     text-decoration: none;
     border-radius: 60px;
     margin: 15px;
@@ -298,7 +373,7 @@ a{
     max-width: 300px;
     transform: scale(1,1.1);
 // Glow effect
-    color: rgba(255, 255, 255, 1);
+    color: var(--social-button-hover);
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
   }
 
@@ -313,7 +388,7 @@ a{
     
     
     button{
-        background-color: rgba(26, 27, 29, 0.37);
+        background-color: var(--intro-button-bg-hover);
         border:none;
         font-family: inherit;
         font-size: 26px;
@@ -334,12 +409,12 @@ a{
     }
     .btn-effect {
         border-color: rgb(76, 174, 235);
-        color: #fff;
-        box-shadow: 0 0 40px 40px rgb(19, 19, 51) inset, 0 0 0 0 rgb(9, 9, 60);
+        color: rgba(255, 255, 255, 0.629);
+        box-shadow: 0 0 40px 40px var(--intro-button-bg) inset, 0 0 0 0 rgb(21, 239, 199);
         transition: all 150ms ease-in-out;
         
         &:hover {
-          box-shadow: 0 0 10px 0 rgba(90, 156, 237, 0.334) inset, 0 0 10px 4px blue;
+          box-shadow: 0 0 10px 0 rgba(18, 77, 149, 0.334) inset, 0 0 10px 4px var(--intro-button-bg-hover-shadow);
           color:black;
         }
     }
@@ -360,7 +435,7 @@ a{
     top: 0;
     bottom: 0;
     margin: auto;
-    background-color: aqua;
+    background-color: var(--about-card-bg);
     display: flex;
     overflow: hidden;
 }
@@ -374,7 +449,7 @@ a{
 .details{
     height: 100%;
     width: 42%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--about-card-details-bg);
     //position: absolute;
     border-radius: 20px 0 0 20px;
     padding: 35px;
@@ -388,7 +463,7 @@ a{
   margin: 0;
   text-align: right;
   font-family: inherit;
-  color: #080808;
+  color: var(--about-card-text);
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -409,7 +484,7 @@ a{
   bottom: 0;
   height: 5px;
   width: 165px;
-  background-color: #111;
+  background-color: var(--about-card-text);
 }
 .details-heading h1:after {
   content: "";
@@ -451,8 +526,8 @@ a{
     text-transform: uppercase;
     letter-spacing: 1.8px;
     font-weight: 800;
-    color: #000;
-    background-color: inherit;
+    color: var(--about-card-text);
+    background-color: var(--about-card-details-button-bg);
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -462,9 +537,9 @@ a{
   }
   
   .button1:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
+    background-color: var(--about-card-details-button-bg-hover);
+    box-shadow: 0px 15px 20px rgba(188, 229, 213, 0);
+    color: var(--about-card-text);
     transform: translateY(-7px);
   }
 }
@@ -473,9 +548,6 @@ a{
 
 //    Skills button styling
 
-$frontend: rgb(211, 227, 211);
-$backend: rgb(10, 16, 20);
-$others: green,yellow,blue,pink;
 
 .skills-buttons{
   padding: 50px;
@@ -485,7 +557,7 @@ $others: green,yellow,blue,pink;
     text-align: center;
     height: 100%;
     width: 58%;
-    background-color: azure;
+    background-color: var(--about-card-skills-bg);
     padding: 35px;
     border-radius: 0 20px 20px 0;
     
@@ -494,12 +566,12 @@ $others: green,yellow,blue,pink;
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  //color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  background: transparent;
+  //background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -512,8 +584,8 @@ $others: green,yellow,blue,pink;
 
 .btn-11 {
     border: none;
-    background: inherit;
-    color: rgb(20, 18, 18);
+    background: var(--about-card-skills-button-bg);
+    color: var(--about-card-text);
     overflow: hidden;
 }
 .btn-11:hover {
@@ -527,8 +599,8 @@ $others: green,yellow,blue,pink;
     left: 0;
     width: 30px;
     height: 100%;
-    background-color: #fff;
-    animation: shiny-btn1 3s ease-in-out infinite;
+    background-color: rgba(255, 255, 255, 0.774);
+    animation: shiny-btn1 4s ease-in-out infinite;
 }
 .btn-11:hover{
   opacity: .7;
@@ -556,21 +628,15 @@ $others: green,yellow,blue,pink;
   margin: 0;
   text-align: left;
   font-family: inherit;
-  font-weight: 300;
-  font-size: 40px;
-  color: #080808;
+  color: var(--about-card-text);
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-}
-
-.skills-heading h1 {
   font-size: 28px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.5em;
   padding-bottom: 15px;
-  position: relative;
 }
 .skills-heading h1:before {
   content: "";
@@ -579,7 +645,7 @@ $others: green,yellow,blue,pink;
   bottom: 0;
   height: 5px;
   width: 410px;
-  background-color: #111;
+  background-color: var(--about-card-text);
 }
 .skills-heading h1:after {
   content: "";
@@ -589,14 +655,14 @@ $others: green,yellow,blue,pink;
   height: 1px;
   width: 95%;
   max-width: 95%;
-  background-color: #333;
+  background-color: var(--about-card-text);
 }
 
 
 //                                      Work Section
 
 .work-card{
-    background-color: rgba(50, 48, 53, 0.537);
+    background-color: var(--work-card-bg);
     width: 94vw;
     height: 92vh;
     border-radius: 20px;
@@ -621,7 +687,7 @@ $others: green,yellow,blue,pink;
 
 //   Title Animation  
 
-$colors: #e2dfeb, #031425fe, #ece4f4, #010807;
+$colors: var(--work-title-color1),var(--work-title-color2),var(--work-title-color1),var(--work-title-color2);
 $max: length($colors);
 $dash: 70;
 $dash-gap: 10;
@@ -676,8 +742,8 @@ svg {
     flex-flow: row wrap;
     justify-content: center;
     //flex-basis: 33.333333%;
-    padding: 12px;
-    
+    padding: 18px;
+    padding-bottom: 200px;
 }
 
 .project-container{
@@ -686,7 +752,7 @@ svg {
     height: 340px;
     border-radius: 8px;
     margin: 6px;
-    background: transparent;
+    background: var(--proj-cont-bg);
     padding: 8px;
     /* -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -704,7 +770,7 @@ svg {
     transition: 0.4s ease-in-out;
   }
   box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
-  background: transparent;
+  background: var(--proj-cont-bg-hover);
   transition: 0.4s ease-in-out;
   height: 345px;
   min-width: 1055px;
@@ -715,7 +781,7 @@ svg {
 .project-innerwrap{
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: var(--proj-cont-inner);
     display:flex;
 }
 
@@ -725,21 +791,23 @@ svg {
     padding: 22px;
     .proj-title{
       font-size: 42px;
+      color: var(--proj-title);
     }
     .proj-title-line{
       height:12px;
       width:12px;
       border-radius:5px;
-      background-color: aquamarine;
+      background-color: var(--proj-title-line);
     }
     .proj-stack{
-      color: rgb(85, 79, 79);
+      color: var(--proj-stack);
+      font-size: 21px;
     }
     .proj-detail{
       font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       padding-top: 18px;
       font-size: 18px;
-      color: rgb(28, 60, 105)
+      color: var(--proj-detail)
     }
 }
 
@@ -765,7 +833,7 @@ svg {
         padding: 10px;
         margin: 8px;
         border-radius: 8px;
-        background-color: aqua;
+        background-color: var(--proj-btn);
         display: none;
       }
     }
@@ -797,7 +865,7 @@ svg {
     top: 0;
     bottom: 0;
     margin: auto; 
-    background: inherit;
+    background: var(--contact-card-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -821,7 +889,7 @@ svg {
 
 
 .form {
-    background-color: #15172b;
+    background-color: var(--contact-form-bg);
     border-radius: 20px;
     box-sizing: border-box;
     padding: 20px;
@@ -830,7 +898,7 @@ svg {
   }
   
   .title {
-    color: #eee;
+    color: var(--contact-form-title);
     font-family: sans-serif;
     font-size: 36px;
     font-weight: 600;
@@ -838,7 +906,7 @@ svg {
   }
   
   .subtitle {
-    color: #eee;
+    color: var(--contact-form-title);
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -860,11 +928,11 @@ svg {
   }
   
   .input {
-    background-color: #303245;
+    background-color: var(--contact-form-input-bg);
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: var(--contact-form-input-text);
     font-size: 18px;
     height: 100%;
     outline: 0;
@@ -877,7 +945,7 @@ svg {
   }
   
   .cut {
-    background-color: #15172b;
+    background-color: var(--contact-form-bg);
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -898,7 +966,7 @@ svg {
   }
   
   .placeholder {
-    color: #65657b;
+    color: var(--contact-form-input-placeholder);
     font-family: sans-serif;
     left: 20px;
     line-height: 14px;
@@ -915,19 +983,19 @@ svg {
   }
   
   .input:not(:placeholder-shown) ~ .placeholder {
-    color: #808097;
+    color: var(--contact-form-input-placeholder);
   }
   
   .input:focus ~ .placeholder {
-    color: #dc2f55;
+    color: var(--contact-form-input-placeholder-focus);
   }
   
   .submit {
-    background-color: #08d;
+    background-color: var(--contact-form-submit-bg);
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: var(--contact-form-submit-text);
     cursor: pointer;
     font-size: 18px;
     height: 50px;
@@ -941,25 +1009,8 @@ svg {
   }
   
   .submit:active {
-    background-color: rgb(3, 14, 68);
+    background-color: var(--contact-form-submit-active-bg);
   }
-
-//           Mail Icon
-
-.mail-icon{
-    position: absolute;
-    width: 45%;
-    height: 88%;
-    top: 6%;
-    right: 3%;
-    padding: 60px;
-}
-
-.icn{
-    width: 100%;
-    height: 100%;
-    
-}
 
 
 

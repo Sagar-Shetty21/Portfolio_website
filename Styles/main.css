@@ -1,3 +1,88 @@
+:root {
+  --navbar-bg: #3C415C;
+  --navbar-shadow: rgb(158, 92, 205);
+  --intro-small: green;
+  --intro-big: #96FFFF;
+  --intro-big-name: #41B3A3;
+  --intro-bigger-1: rgba(182, 239, 182, 0.868);
+  --intro-bigger-2: rgb(166, 234, 228);
+  --intro-bigger-3: rgb(142, 194, 218);
+  --social-button-bg: rgb(14, 201, 179);
+  --social-button: rgb(84, 34, 84);
+  --social-button-hover: rgb(104, 70, 131);
+  --intro-button-bg: rgba(91, 213, 140, 0.636);
+  --intro-button-bg-hover: rgba(35, 235, 45, 0.875);
+  --intro-button-bg-hover-shadow: rgba(133, 240, 11, 0.814);
+  --about-card-bg: aqua;
+  --about-card-text: black;
+  --about-card-details-bg: rgb(152, 246, 182);
+  --about-card-details-button-bg: inherit;
+  --about-card-details-button-bg-hover: #2EE59D;
+  --about-card-skills-bg: rgb(171, 243, 242);
+  --about-card-skills-button-bg: inherit;
+  --work-card-bg: rgba(50, 48, 53, 0.537);
+  --work-title-colors: #e2dfeb, #031425fe, #ece4f4, #010807;
+  --proj-cont-bg: transparent;
+  --proj-cont-bg-hover: transparent;
+  --proj-cont-inner: transparent;
+  --proj-title-line: aquamarine;
+  --proj-stack: rgb(85, 79, 79);
+  --proj-detail: rgb(28, 60, 105);
+  --proj-btn: aqua;
+  --contact-card-bg: transparent;
+  --contact-form-bg: #15172b;
+  --contact-form-title: #eee;
+  --contact-form-input-bg: #303245;
+  --contact-form-input-text: #eee;
+  --contact-form-input-placeholder: #65657b;
+  --contact-form-input-placeholder-focus: #dc2f55;
+  --contact-form-submit-bg: #08d;
+  --contact-form-submit-text: #eee;
+  --contact-form-submit-active-bg: rgb(3, 14, 68);
+  --navbar-bg: #3C415C;
+  --navbar-shadow: rgb(158, 92, 205);
+  --intro-small: #fbf8cc79;
+  --intro-big: #a3c4f3;
+  --intro-big-name: #41B3A3;
+  --intro-bigger-1: #90dbf4;
+  --intro-bigger-2: #8eecf5;
+  --intro-bigger-3: #98f5e1;
+  --social-button-bg: #a6cbd3;
+  --social-button: #231942b7;
+  --social-button-hover: #231942;
+  --intro-button-bg: #0e00003b;
+  --intro-button-bg-hover: transparent;
+  --intro-button-bg-hover-shadow: #e0e1dd;
+  --about-card-bg: aqua;
+  --about-card-text: black;
+  --about-card-details-bg: rgb(152, 246, 182);
+  --about-card-details-button-bg: inherit;
+  --about-card-details-button-bg-hover: #27d430;
+  --about-card-skills-bg: rgb(171, 243, 242);
+  --about-card-skills-button-bg: inherit;
+  --work-card-bg: #6f6fdd73;
+  --work-title-color1: #8fcaee;
+  --work-title-color2: #94f1c2;
+  --proj-cont-bg: #6f6fdde2;
+  --proj-cont-bg-hover: #6f6fdd;
+  --proj-cont-inner: rgb(134, 134, 234);
+  --proj-title: rgb(15, 29, 63);
+  --proj-title-line: rgb(158, 237, 211);
+  --proj-stack: rgba(79, 5, 101, 0.801);
+  --proj-detail: rgb(53, 11, 205);
+  --proj-btn: aqua;
+  --contact-card-bg: transparent;
+  --contact-form-bg: #15172b;
+  --contact-form-title: #eee;
+  --contact-form-input-bg: #303245;
+  --contact-form-input-text: #eee;
+  --contact-form-input-placeholder: #65657b;
+  --contact-form-input-placeholder-focus: #dc2f55;
+  --contact-form-submit-bg: #08d;
+  --contact-form-submit-text: #eee;
+  --contact-form-submit-active-bg: rgb(3, 14, 68);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +103,6 @@
 body {
   font-family: "Alumni Sans Inline One", cursive;
   font-size: 1.2;
-  color: #000000;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
   width: 100vw;
@@ -50,13 +134,13 @@ a {
   min-width: 430px;
   height: inherit;
   opacity: 30%;
-  background-color: #3C415C;
+  background-color: var(--navbar-bg);
   border-radius: 0 0 30px 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-shadow: 0px 5px 15px rgb(158, 92, 205);
+  box-shadow: 0px 5px 15px var(--navbar-shadow);
 }
 .fixed .nav-bar a {
   font-size: 2rem;
@@ -115,16 +199,16 @@ a {
 .intro .small {
   font-size: 4rem;
   opacity: 0.6;
-  color: green;
+  color: var(--intro-small);
   font-weight: 100;
 }
 .intro .big {
   font-size: 6rem;
-  color: #96FFFF;
+  color: var(--intro-big);
   font-weight: 100;
 }
 .intro .big .name {
-  color: #41B3A3;
+  color: var(--intro-big-name);
 }
 .intro .bigger {
   font-size: 8rem;
@@ -163,15 +247,15 @@ a {
 }
 
 .web-developer {
-  color: rgba(182, 239, 182, 0.868);
+  color: var(--intro-bigger-1);
 }
 
 .programmer {
-  color: rgb(166, 234, 228);
+  color: var(--intro-bigger-2);
 }
 
 .problem-solver {
-  color: rgb(142, 194, 218);
+  color: var(--intro-bigger-3);
 }
 
 .social {
@@ -199,8 +283,8 @@ a {
 }
 
 .btn {
-  background-color: rgb(22, 59, 91);
-  color: rgb(224, 214, 214);
+  background-color: var(--social-button-bg);
+  color: var(--social-button);
   text-decoration: none;
   border-radius: 60px;
   margin: 15px;
@@ -231,7 +315,7 @@ a {
 .btn:hover {
   max-width: 300px;
   transform: scale(1, 1.1);
-  color: rgb(255, 255, 255);
+  color: var(--social-button-hover);
   box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
 }
 
@@ -242,7 +326,7 @@ a {
   left: 18vw;
 }
 .button button {
-  background-color: rgba(26, 27, 29, 0.37);
+  background-color: var(--intro-button-bg-hover);
   border: none;
   font-family: inherit;
   font-size: 26px;
@@ -261,12 +345,12 @@ a {
 }
 .button .btn-effect {
   border-color: rgb(76, 174, 235);
-  color: #fff;
-  box-shadow: 0 0 40px 40px rgb(19, 19, 51) inset, 0 0 0 0 rgb(9, 9, 60);
+  color: rgba(255, 255, 255, 0.629);
+  box-shadow: 0 0 40px 40px var(--intro-button-bg) inset, 0 0 0 0 rgb(21, 239, 199);
   transition: all 150ms ease-in-out;
 }
 .button .btn-effect:hover {
-  box-shadow: 0 0 10px 0 rgba(90, 156, 237, 0.334) inset, 0 0 10px 4px blue;
+  box-shadow: 0 0 10px 0 rgba(18, 77, 149, 0.334) inset, 0 0 10px 4px var(--intro-button-bg-hover-shadow);
   color: black;
 }
 
@@ -280,7 +364,7 @@ a {
   top: 0;
   bottom: 0;
   margin: auto;
-  background-color: aqua;
+  background-color: var(--about-card-bg);
   display: flex;
   overflow: hidden;
 }
@@ -292,7 +376,7 @@ a {
 .details {
   height: 100%;
   width: 42%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--about-card-details-bg);
   border-radius: 20px 0 0 20px;
   padding: 35px;
 }
@@ -303,7 +387,7 @@ a {
   margin: 0;
   text-align: right;
   font-family: inherit;
-  color: #080808;
+  color: var(--about-card-text);
   transition: all 0.4s ease 0s;
 }
 
@@ -323,7 +407,7 @@ a {
   bottom: 0;
   height: 5px;
   width: 165px;
-  background-color: #111;
+  background-color: var(--about-card-text);
 }
 
 .details-heading h1:after {
@@ -367,8 +451,8 @@ a {
   text-transform: uppercase;
   letter-spacing: 1.8px;
   font-weight: 800;
-  color: #000;
-  background-color: inherit;
+  color: var(--about-card-text);
+  background-color: var(--about-card-details-button-bg);
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -377,9 +461,9 @@ a {
   outline: none;
 }
 .abt-contact-button .button1:hover {
-  background-color: #2EE59D;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
+  background-color: var(--about-card-details-button-bg-hover);
+  box-shadow: 0px 15px 20px rgba(188, 229, 213, 0);
+  color: var(--about-card-text);
   transform: translateY(-7px);
 }
 
@@ -391,7 +475,7 @@ a {
   text-align: center;
   height: 100%;
   width: 58%;
-  background-color: azure;
+  background-color: var(--about-card-skills-bg);
   padding: 35px;
   border-radius: 0 20px 20px 0;
 }
@@ -399,12 +483,10 @@ a {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -417,8 +499,8 @@ a {
 
 .btn-11 {
   border: none;
-  background: inherit;
-  color: rgb(20, 18, 18);
+  background: var(--about-card-skills-button-bg);
+  color: var(--about-card-text);
   overflow: hidden;
 }
 
@@ -434,9 +516,9 @@ a {
   left: 0;
   width: 30px;
   height: 100%;
-  background-color: #fff;
-  -webkit-animation: shiny-btn1 3s ease-in-out infinite;
-          animation: shiny-btn1 3s ease-in-out infinite;
+  background-color: rgba(255, 255, 255, 0.774);
+  -webkit-animation: shiny-btn1 4s ease-in-out infinite;
+          animation: shiny-btn1 4s ease-in-out infinite;
 }
 
 .btn-11:hover {
@@ -471,19 +553,13 @@ a {
   margin: 0;
   text-align: left;
   font-family: inherit;
-  font-weight: 300;
-  font-size: 40px;
-  color: #080808;
+  color: var(--about-card-text);
   transition: all 0.4s ease 0s;
-}
-
-.skills-heading h1 {
   font-size: 28px;
   font-weight: 500;
   letter-spacing: 0;
   line-height: 1.5em;
   padding-bottom: 15px;
-  position: relative;
 }
 
 .skills-heading h1:before {
@@ -493,7 +569,7 @@ a {
   bottom: 0;
   height: 5px;
   width: 410px;
-  background-color: #111;
+  background-color: var(--about-card-text);
 }
 
 .skills-heading h1:after {
@@ -504,11 +580,11 @@ a {
   height: 1px;
   width: 95%;
   max-width: 95%;
-  background-color: #333;
+  background-color: var(--about-card-text);
 }
 
 .work-card {
-  background-color: rgba(50, 48, 53, 0.537);
+  background-color: var(--work-card-bg);
   width: 94vw;
   height: 92vh;
   border-radius: 20px;
@@ -541,22 +617,22 @@ a {
   animation: stroke 8s infinite linear;
 }
 .text-work:nth-child(4n+1) {
-  stroke: #e2dfeb;
+  stroke: var(--work-title-color1);
   -webkit-animation-delay: -2s;
   animation-delay: -2s;
 }
 .text-work:nth-child(4n+2) {
-  stroke: rgba(3, 20, 37, 0.9960784314);
+  stroke: var(--work-title-color2);
   -webkit-animation-delay: -4s;
   animation-delay: -4s;
 }
 .text-work:nth-child(4n+3) {
-  stroke: #ece4f4;
+  stroke: var(--work-title-color1);
   -webkit-animation-delay: -6s;
   animation-delay: -6s;
 }
 .text-work:nth-child(4n+4) {
-  stroke: #010807;
+  stroke: var(--work-title-color2);
   -webkit-animation-delay: -8s;
   animation-delay: -8s;
 }
@@ -580,7 +656,8 @@ svg {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 12px;
+  padding: 18px;
+  padding-bottom: 200px;
 }
 
 .project-container {
@@ -589,7 +666,7 @@ svg {
   height: 340px;
   border-radius: 8px;
   margin: 6px;
-  background: transparent;
+  background: var(--proj-cont-bg);
   padding: 8px;
   /* -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -599,7 +676,7 @@ svg {
 
 .project-container:hover {
   box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
-  background: transparent;
+  background: var(--proj-cont-bg-hover);
   transition: 0.4s ease-in-out;
   height: 345px;
   min-width: 1055px;
@@ -613,7 +690,7 @@ svg {
 .project-innerwrap {
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: var(--proj-cont-inner);
   display: flex;
 }
 
@@ -624,21 +701,23 @@ svg {
 }
 .proj-info .proj-title {
   font-size: 42px;
+  color: var(--proj-title);
 }
 .proj-info .proj-title-line {
   height: 12px;
   width: 12px;
   border-radius: 5px;
-  background-color: aquamarine;
+  background-color: var(--proj-title-line);
 }
 .proj-info .proj-stack {
-  color: rgb(85, 79, 79);
+  color: var(--proj-stack);
+  font-size: 21px;
 }
 .proj-info .proj-detail {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding-top: 18px;
   font-size: 18px;
-  color: rgb(28, 60, 105);
+  color: var(--proj-detail);
 }
 
 .proj-demo {
@@ -663,7 +742,7 @@ svg {
   padding: 10px;
   margin: 8px;
   border-radius: 8px;
-  background-color: aqua;
+  background-color: var(--proj-btn);
   display: none;
 }
 
@@ -686,7 +765,7 @@ svg {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: inherit;
+  background: var(--contact-card-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -706,7 +785,7 @@ svg {
 }
 
 .form {
-  background-color: #15172b;
+  background-color: var(--contact-form-bg);
   border-radius: 20px;
   box-sizing: border-box;
   padding: 20px;
@@ -715,7 +794,7 @@ svg {
 }
 
 .title {
-  color: #eee;
+  color: var(--contact-form-title);
   font-family: sans-serif;
   font-size: 36px;
   font-weight: 600;
@@ -723,7 +802,7 @@ svg {
 }
 
 .subtitle {
-  color: #eee;
+  color: var(--contact-form-title);
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -745,11 +824,11 @@ svg {
 }
 
 .input {
-  background-color: #303245;
+  background-color: var(--contact-form-input-bg);
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: var(--contact-form-input-text);
   font-size: 18px;
   height: 100%;
   outline: 0;
@@ -762,7 +841,7 @@ svg {
 }
 
 .cut {
-  background-color: #15172b;
+  background-color: var(--contact-form-bg);
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -791,7 +870,7 @@ svg {
 }
 
 .placeholder {
-  color: #65657b;
+  color: var(--contact-form-input-placeholder);
   font-family: sans-serif;
   left: 20px;
   line-height: 14px;
@@ -816,27 +895,27 @@ svg {
 }
 
 .input:not(:-moz-placeholder-shown) ~ .placeholder {
-  color: #808097;
+  color: var(--contact-form-input-placeholder);
 }
 
 .input:not(:-ms-input-placeholder) ~ .placeholder {
-  color: #808097;
+  color: var(--contact-form-input-placeholder);
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
-  color: #808097;
+  color: var(--contact-form-input-placeholder);
 }
 
 .input:focus ~ .placeholder {
-  color: #dc2f55;
+  color: var(--contact-form-input-placeholder-focus);
 }
 
 .submit {
-  background-color: #08d;
+  background-color: var(--contact-form-submit-bg);
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: var(--contact-form-submit-text);
   cursor: pointer;
   font-size: 18px;
   height: 50px;
@@ -847,21 +926,7 @@ svg {
 }
 
 .submit:active {
-  background-color: rgb(3, 14, 68);
-}
-
-.mail-icon {
-  position: absolute;
-  width: 45%;
-  height: 88%;
-  top: 6%;
-  right: 3%;
-  padding: 60px;
-}
-
-.icn {
-  width: 100%;
-  height: 100%;
+  background-color: var(--contact-form-submit-active-bg);
 }
 
 @media screen and (max-width: 500px) {
