@@ -739,6 +739,15 @@ svg {
       font-size: 42px;
       color: var(--proj-title);
     }
+    .proj-tag{
+        width: auto;
+        height: 14px;
+        font-size: 18px;
+        background-color: orangered;
+        padding: 2px 7px 2px 7px;
+        margin: 22px;
+        border-radius: 22px;;
+    }
     .proj-title-line{
       height:12px;
       width:12px;
