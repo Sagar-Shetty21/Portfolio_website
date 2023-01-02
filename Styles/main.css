@@ -1052,6 +1052,7 @@ svg {
   }
   .projects-flex {
     padding: 6px;
+    padding-bottom: 120px;
   }
   .project-container {
     min-width: 140px;
@@ -1318,6 +1319,7 @@ svg {
   }
   .projects-flex {
     padding: 6px;
+    padding-bottom: 120px;
   }
   .project-container {
     min-width: 460px;
