@@ -661,18 +661,26 @@ svg {
   height: 100%;
   padding: 22px;
 }
+.proj-info .proj-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 .proj-info .proj-title {
   font-size: 42px;
   color: var(--proj-title);
 }
 .proj-info .proj-tag {
   width: auto;
-  height: 14px;
+  height: 22px;
   font-size: 18px;
   background-color: orangered;
-  padding: 2px 7px 2px 7px;
-  margin: 22px;
+  padding: 8px;
+  margin-left: 10px;
   border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .proj-info .proj-title-line {
   height: 12px;
@@ -1096,12 +1104,11 @@ svg {
     font-size: 26px;
   }
   .proj-info .proj-tag {
-    width: auto;
-    height: 8px;
-    font-size: 8px;
-    padding: 2px 5px 2px 5px;
-    margin: 12px;
+    height: 12px;
+    font-size: 10px;
+    padding: 4px;
     border-radius: 22px;
+    margin-left: 6px;
   }
   .proj-info .proj-title-line {
     height: 7px;
@@ -1366,6 +1373,14 @@ svg {
   }
   .proj-info .proj-title {
     font-size: 30px;
+  }
+  .proj-info .proj-tag {
+    height: 15px;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 22px;
+    margin-left: 8px;
+    overflow: hidden;
   }
   .proj-info .proj-title-line {
     height: 7px;
