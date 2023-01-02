@@ -1,46 +1,6 @@
 :root {
-  --navbar-bg: #3C415C;
-  --navbar-shadow: rgb(158, 92, 205);
-  --intro-small: green;
-  --intro-big: #96FFFF;
-  --intro-big-name: #41B3A3;
-  --intro-bigger-1: rgba(182, 239, 182, 0.868);
-  --intro-bigger-2: rgb(166, 234, 228);
-  --intro-bigger-3: rgb(142, 194, 218);
-  --social-button-bg: rgb(14, 201, 179);
-  --social-button: rgb(84, 34, 84);
-  --social-button-hover: rgb(104, 70, 131);
-  --intro-button-bg: rgba(91, 213, 140, 0.636);
-  --intro-button-bg-hover: rgba(35, 235, 45, 0.875);
-  --intro-button-bg-hover-shadow: rgba(133, 240, 11, 0.814);
-  --about-card-bg: aqua;
-  --about-card-text: black;
-  --about-card-details-bg: rgb(152, 246, 182);
-  --about-card-details-button-bg: inherit;
-  --about-card-details-button-bg-hover: #2EE59D;
-  --about-card-skills-bg: rgb(171, 243, 242);
-  --about-card-skills-button-bg: inherit;
-  --work-card-bg: rgba(50, 48, 53, 0.537);
-  --work-title-colors: #e2dfeb, #031425fe, #ece4f4, #010807;
-  --proj-cont-bg: transparent;
-  --proj-cont-bg-hover: transparent;
-  --proj-cont-inner: transparent;
-  --proj-title-line: aquamarine;
-  --proj-stack: rgb(85, 79, 79);
-  --proj-detail: rgb(28, 60, 105);
-  --proj-btn: aqua;
-  --contact-card-bg: transparent;
-  --contact-form-bg: #15172b;
-  --contact-form-title: #eee;
-  --contact-form-input-bg: #303245;
-  --contact-form-input-text: #eee;
-  --contact-form-input-placeholder: #65657b;
-  --contact-form-input-placeholder-focus: #dc2f55;
-  --contact-form-submit-bg: #08d;
-  --contact-form-submit-text: #eee;
-  --contact-form-submit-active-bg: rgb(3, 14, 68);
-  --navbar-bg: #3C415C;
-  --navbar-shadow: rgb(158, 92, 205);
+  --navbar-bg: #5561a5;
+  --navbar-shadow: rgb(100, 105, 255);
   --intro-small: #fbf8cc79;
   --intro-big: #a3c4f3;
   --intro-big-name: #41B3A3;
@@ -52,25 +12,26 @@
   --social-button-hover: #231942;
   --intro-button-bg: #0e00003b;
   --intro-button-bg-hover: transparent;
-  --intro-button-bg-hover-shadow: #e0e1dd;
-  --about-card-bg: aqua;
+  --intro-button-bg-hover-shadow: #c0d8eb;
+  --about-card-bg: transparent;
   --about-card-text: black;
   --about-card-details-bg: rgb(152, 246, 182);
   --about-card-details-button-bg: inherit;
   --about-card-details-button-bg-hover: #27d430;
-  --about-card-skills-bg: rgb(171, 243, 242);
+  --about-card-skills-bg: rgba(171, 243, 242, 0.755);
   --about-card-skills-button-bg: inherit;
   --work-card-bg: #6f6fdd73;
   --work-title-color1: #8fcaee;
   --work-title-color2: #94f1c2;
   --proj-cont-bg: #6f6fdde2;
   --proj-cont-bg-hover: #6f6fdd;
+  --proj-cont-hover-shadow: rgba(33, 33, 33, 0.841);
   --proj-cont-inner: rgb(134, 134, 234);
   --proj-title: rgb(15, 29, 63);
   --proj-title-line: rgb(158, 237, 211);
   --proj-stack: rgba(79, 5, 101, 0.801);
-  --proj-detail: rgb(53, 11, 205);
-  --proj-btn: aqua;
+  --proj-detail: #023047;
+  --proj-btn: rgba(73, 126, 186, 0.842);
   --contact-card-bg: transparent;
   --contact-form-bg: #15172b;
   --contact-form-title: #eee;
@@ -418,7 +379,7 @@ a {
   height: 1px;
   width: 95%;
   max-width: 95%;
-  background-color: #333;
+  background-color: var(--about-card-text);
 }
 
 .details-paragraph {
@@ -427,6 +388,7 @@ a {
   font-weight: 600;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
+  color: var(--about-card-text);
 }
 
 .details-paragraph > p {
@@ -675,7 +637,7 @@ svg {
 }
 
 .project-container:hover {
-  box-shadow: 0 0 50px rgba(33, 33, 33, 0.841);
+  box-shadow: 0 0 50px var(--proj-cont-hover-shadow);
   background: var(--proj-cont-bg-hover);
   transition: 0.4s ease-in-out;
   height: 345px;
