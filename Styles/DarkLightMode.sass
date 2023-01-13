@@ -45,6 +45,34 @@
 
 
 
+
+@media screen and (max-width: 1200px) and (min-width: 500px) 
+    #toggle-btn
+        top: 2vh
+        right: 4vw
+
+
+@media screen and (max-width: 500px)
+    #toggle-btn
+        top: 2vh
+        right: 3vw
+    .label
+        width: 28px
+        height: 12px
+    .ball
+        width: 11px
+        height: 11px
+        top: 1px
+        left: 2px
+    .checkbox:checked + .label .ball
+        transform: translateX(12px)
+    .fa-moon
+        font-size: 7px
+    .fa-sun
+        font-size: 7px
+
+
+
 //      Dark mode stars background
 
 // n is number of stars required
