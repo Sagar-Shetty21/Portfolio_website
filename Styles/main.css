@@ -94,7 +94,7 @@ a {
   width: 28vw;
   min-width: 430px;
   height: inherit;
-  opacity: 30%;
+  opacity: 60%;
   background-color: var(--navbar-bg);
   border-radius: 0 0 30px 30px;
   display: inline-flex;
@@ -106,7 +106,7 @@ a {
 .fixed .nav-bar a {
   font-size: 2rem;
   padding: 5px 12px;
-  opacity: 40%;
+  opacity: 70%;
 }
 .fixed .nav-bar a:hover {
   opacity: 100%;
@@ -479,8 +479,7 @@ a {
   width: 30px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.774);
-  -webkit-animation: shiny-btn1 4s ease-in-out infinite;
-          animation: shiny-btn1 4s ease-in-out infinite;
+  animation: shiny-btn1 4s ease-in-out infinite;
 }
 
 .btn-11:hover {
@@ -489,25 +488,6 @@ a {
 
 .btn-11:active {
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
-}
-
-@-webkit-keyframes shiny-btn1 {
-  0% {
-    -webkit-transform: scale(0) rotate(45deg);
-    opacity: 0;
-  }
-  80% {
-    -webkit-transform: scale(0) rotate(45deg);
-    opacity: 0.5;
-  }
-  81% {
-    -webkit-transform: scale(4) rotate(45deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(50) rotate(45deg);
-    opacity: 0;
-  }
 }
 .skills-heading h1 {
   position: relative;
@@ -575,34 +555,23 @@ a {
   stroke-linejoin: round;
   stroke-dasharray: 70 250;
   stroke-dashoffset: 0;
-  -webkit-animation: stroke 8s infinite linear;
   animation: stroke 8s infinite linear;
 }
 .text-work:nth-child(4n+1) {
   stroke: var(--work-title-color1);
-  -webkit-animation-delay: -2s;
   animation-delay: -2s;
 }
 .text-work:nth-child(4n+2) {
   stroke: var(--work-title-color2);
-  -webkit-animation-delay: -4s;
   animation-delay: -4s;
 }
 .text-work:nth-child(4n+3) {
   stroke: var(--work-title-color1);
-  -webkit-animation-delay: -6s;
   animation-delay: -6s;
 }
 .text-work:nth-child(4n+4) {
   stroke: var(--work-title-color2);
-  -webkit-animation-delay: -8s;
   animation-delay: -8s;
-}
-
-@-webkit-keyframes stroke {
-  100% {
-    stroke-dashoffset: -320;
-  }
 }
 @keyframes stroke {
   100% {
@@ -839,10 +808,6 @@ svg {
   transform: translateY(8px);
 }
 
-.input:not(:-ms-input-placeholder) ~ .cut {
-  transform: translateY(8px);
-}
-
 .input:focus ~ .cut,
 .input:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
@@ -864,20 +829,12 @@ svg {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
-.input:not(:-ms-input-placeholder) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
-}
-
 .input:focus ~ .placeholder,
 .input:not(:placeholder-shown) ~ .placeholder {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
 
 .input:not(:-moz-placeholder-shown) ~ .placeholder {
-  color: var(--contact-form-input-placeholder);
-}
-
-.input:not(:-ms-input-placeholder) ~ .placeholder {
   color: var(--contact-form-input-placeholder);
 }
 
@@ -1165,11 +1122,8 @@ svg {
   .input:not(:-moz-placeholder-shown) ~ .placeholder {
     transform: translateY(-22px) translateX(17px) scale(0.75);
   }
-  .input:not(:-ms-input-placeholder) ~ .placeholder {
-    transform: translateY(-22px) translateX(17px) scale(0.75);
-  }
   .input:focus ~ .placeholder,
-.input:not(:placeholder-shown) ~ .placeholder {
+  .input:not(:placeholder-shown) ~ .placeholder {
     transform: translateY(-22px) translateX(17px) scale(0.75);
   }
   .msg-input {
