@@ -2,12 +2,12 @@
     --navbar-bg: #5561a5;
     --navbar-shadow: rgb(100, 105, 255);
     //home section
-    --intro-small: #fbf8cc79;
+    --intro-small: #748DA6;
     --intro-big: #a3c4f3;
-    --intro-big-name: #41B3A3;
-    --intro-bigger-1: #90dbf4;
-    --intro-bigger-2: #8eecf5;
-    --intro-bigger-3: #98f5e1;
+    --intro-big-name: #7fd0e9;
+    --intro-bigger-1: #7285d3;
+    --intro-bigger-2: #7285d3a9;
+    --intro-bigger-3: #7285d3dc;
     --social-button-bg: #a6cbd3;
     --social-button: #231942b7;
     --social-button-hover: #231942;
@@ -533,6 +533,7 @@ a{
     background: var(--about-card-skills-button-bg);
     color: var(--about-card-text);
     overflow: hidden;
+    transition: box-shadow 6s ease;
 }
 .btn-11:hover {
     text-decoration: none;
@@ -548,10 +549,11 @@ a{
     background-color: rgba(255, 255, 255, 0.774);
     animation: shiny-btn1 4s ease-in-out infinite;
 }
+
 .btn-11:hover{
   opacity: .7;
 }
-.btn-11:active{
+.btn-11:hover{
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
@@ -988,7 +990,7 @@ svg {
             min-width: auto;
             height: 80%;
             background: rgb(21, 40, 52);
-            border-radius: 8px;
+            border-radius: 50px;
             opacity: 80%;
             a{
                 font-size: 1.4rem;

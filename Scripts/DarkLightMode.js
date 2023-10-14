@@ -22,18 +22,8 @@ function changeMode(){
     const lightMode = document.getElementById('jsi-snows');
 
     if(mode.classList.contains('dark')){
-        darkMode.classList.add('dark-mode');
-        star1.classList.add('star1');
-        star2.classList.add('star2');
-        star3.classList.add('star3');
-        lightMode.classList.remove("g-snows");
         toDarkMode();
     }else{
-        lightMode.classList.add("g-snows");
-        darkMode.classList.remove('dark-mode');
-        star1.classList.remove('star1');
-        star2.classList.remove('star2');
-        star3.classList.remove('star3');
         toLightMode();
     }
 }
@@ -42,6 +32,9 @@ function changeMode(){
 
 function toDarkMode() {
     var root = document.querySelector(':root');
+    root.style.setProperty('--backgroundColor','radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)');
+    root.style.setProperty('--bg-stars-color','#FFF');
+
     root.style.setProperty('--navbar-bg','#202230');
     root.style.setProperty('--navbar-shadow','rgb(99, 74, 116)');
     //home section
@@ -93,12 +86,15 @@ function toDarkMode() {
 
 function toLightMode() {
     var root = document.querySelector(':root');
+    root.style.setProperty('--backgroundColor','radial-gradient(circle, rgba(225,225,240,1) 0%, rgba(229,237,238,1) 56%, rgba(218,244,246,1) 100%)');
+    root.style.setProperty('--bg-stars-color','black');
+
     root.style.setProperty('--navbar-bg','#5561a5');
     root.style.setProperty('--navbar-shadow','rgb(100, 105, 255)');
     //home section
-    root.style.setProperty('--intro-small','#fbf8cc79');
-    root.style.setProperty('--intro-big','#a3c4f3');
-    root.style.setProperty('--intro-big-name','#41B3A3');
+    root.style.setProperty('--intro-small','#748DA6');
+    root.style.setProperty('--intro-big','#B9E9FC');
+    root.style.setProperty('--intro-big-name','#3A98B9');
     root.style.setProperty('--intro-bigger-1','#90dbf4');
     root.style.setProperty('--intro-bigger-2','#8eecf5');
     root.style.setProperty('--intro-bigger-3','#98f5e1');
