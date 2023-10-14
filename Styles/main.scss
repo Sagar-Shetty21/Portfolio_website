@@ -1,6 +1,6 @@
 :root {
-    --navbar-bg: #5561a5;
-    --navbar-shadow: rgb(100, 105, 255);
+    --navbar-bg: #d1eef0;
+    --navbar-shadow: rgb(23, 23, 100);
     //home section
     --intro-small: #748DA6;
     --intro-big: #a3c4f3;
@@ -8,7 +8,7 @@
     --intro-bigger-1: #7285d3;
     --intro-bigger-2: #7285d3a9;
     --intro-bigger-3: #7285d3dc;
-    --social-button-bg: #a6cbd3;
+    --social-button-bg: #B1AFFF;
     --social-button: #231942b7;
     --social-button-hover: #231942;
     --intro-button-bg: #0e00003b;
@@ -264,22 +264,22 @@ a{
     z-index: 1;
     .btn-github{
         .btn{
-            padding: 13px;
+            padding: 16px;
         }
     }
     .btn-linkedin{
         .btn{
-            padding: 14px;
+            padding: 17px;
         }
     }
     .btn-freecodecamp{
         .btn{
-            padding: 10px;
+            padding: 11px;
         } 
     }
     .btn-email{
         .btn{
-            padding: 12px;
+            padding: 15px;
         }
     }
 }
@@ -290,19 +290,19 @@ a{
     text-decoration: none;
     border-radius: 60px;
     margin: 15px;
-    height: 60px;
+    height: 75px;
     display: inline-flex;
     flex-direction: row-reverse;
     align-items: center;
     overflow:hidden;
     width: auto;
-    max-width: 60px; 
+    max-width: 75px; 
     -webkit-transition: max-width 0.5s;
     transition: max-width 0.5s;
   }
   
   .icon {
-    font-size: 35px;
+    font-size: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,12 +311,13 @@ a{
   .text {
     white-space: nowrap;
     padding-right: 20px;
+    padding-left: 10px;
     font-family:inherit;
-    font-size: 22px;
+    font-size: 32px;
   }
 // Hover effect on social button
   .btn:hover {
-    max-width: 300px;
+    max-width: 400px;
     transform: scale(1,1.1);
 // Glow effect
     color: var(--social-button-hover);

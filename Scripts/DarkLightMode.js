@@ -37,6 +37,11 @@ function toDarkMode() {
 
     root.style.setProperty('--navbar-bg','#202230');
     root.style.setProperty('--navbar-shadow','rgb(99, 74, 116)');
+
+    root.style.setProperty('--toggle-bg','#000000');
+    root.style.setProperty('--toggle-ball-bg','rgb(15, 17, 16)');
+    root.style.setProperty('--toggle-shadow','0 0 20px rgba(255, 255, 255, 0.897)');
+
     //home section
     root.style.setProperty('--intro-small','#bcc6bc');
     root.style.setProperty('--intro-big','#233232');
@@ -89,8 +94,13 @@ function toLightMode() {
     root.style.setProperty('--backgroundColor','radial-gradient(circle, rgba(225,225,240,1) 0%, rgba(229,237,238,1) 56%, rgba(218,244,246,1) 100%)');
     root.style.setProperty('--bg-stars-color','black');
 
-    root.style.setProperty('--navbar-bg','#5561a5');
-    root.style.setProperty('--navbar-shadow','rgb(100, 105, 255)');
+    root.style.setProperty('--navbar-bg','#d1eef0');
+    root.style.setProperty('--navbar-shadow','rgb(23, 23, 100)');
+
+    root.style.setProperty('--toggle-bg','#82cac3');
+    root.style.setProperty('--toggle-ball-bg','rgb(117, 214, 177)');
+    root.style.setProperty('--toggle-shadow','0 0 20px rgba(26, 25, 25, 0.781)');
+
     //home section
     root.style.setProperty('--intro-small','#748DA6');
     root.style.setProperty('--intro-big','#B9E9FC');
