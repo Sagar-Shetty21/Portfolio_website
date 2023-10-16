@@ -54,7 +54,16 @@
     padding: 0; 
     box-sizing: border-box;
     list-style: none; 
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+    }
+    ::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+    }
 }
+
 
 .home{
     position:absolute;
@@ -298,7 +307,7 @@ a{
     width: auto;
     max-width: 75px; 
     -webkit-transition: max-width 0.5s;
-    transition: max-width 0.5s;
+    transition: all 0.5s;
   }
   
   .icon {
@@ -374,7 +383,7 @@ a{
 
 .about-card{
     width: 94vw;
-    height: 92vh;
+    height: 80vh;
     border-radius: 20px;
     position: absolute;
     left: 0; 
@@ -384,6 +393,8 @@ a{
     margin: auto;
     background-color: var(--about-card-bg);
     display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 .sec2{
@@ -400,7 +411,7 @@ a{
     //position: absolute;
     border-radius: 20px 0 0 20px;
     padding: 35px;
-    
+    overflow-y: scroll;
 }
 
 // Details Heading
@@ -508,6 +519,8 @@ a{
     background-color: var(--about-card-skills-bg);
     padding: 35px;
     border-radius: 0 20px 20px 0;
+    overflow-y: scroll;
+
 }
 
 .custom-btn {
