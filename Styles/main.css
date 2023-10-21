@@ -561,34 +561,33 @@ a {
   z-index: -1;
 }
 
-/* Main styles */
-.text-work {
-  fill: none;
-  stroke-width: 3;
-  stroke-linejoin: round;
-  stroke-dasharray: 70 250;
-  stroke-dashoffset: 0;
-  animation: stroke 8s infinite linear;
+.neon {
+  font-family: "Monoton", cursive;
+  font-size: 74px;
+  color: #90abf5;
+  text-align: center;
+  margin-left: 600px;
+  margin-top: 100px;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-shadow: 1px 0px 4px #2481a7, 2px 0px 4px #6baeb9, 3px 0px 4px #65ceb7, 2px 0px 3px #155aa8, 2px 3px 15px #2b6fd4, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #5592ca, 40px 0vw 200px #5446d6;
 }
-.text-work:nth-child(4n+1) {
-  stroke: var(--work-title-color1);
-  animation-delay: -2s;
+
+.flicker-slow {
+  animation: flicker 3s linear infinite;
 }
-.text-work:nth-child(4n+2) {
-  stroke: var(--work-title-color2);
-  animation-delay: -4s;
+
+.flicker-fast {
+  animation: flicker 1s linear infinite;
 }
-.text-work:nth-child(4n+3) {
-  stroke: var(--work-title-color1);
-  animation-delay: -6s;
-}
-.text-work:nth-child(4n+4) {
-  stroke: var(--work-title-color2);
-  animation-delay: -8s;
-}
-@keyframes stroke {
-  100% {
-    stroke-dashoffset: -320;
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 0.99;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
   }
 }
 /* Other styles */
