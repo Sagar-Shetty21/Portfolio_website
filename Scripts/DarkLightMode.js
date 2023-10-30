@@ -14,13 +14,6 @@ function changeMode(){
         mode.classList.remove('light');
     }
 
-    const darkMode = document.getElementById('star-bg');
-    const star1 = document.getElementById('stars');
-    const star2 = document.getElementById('stars2');
-    const star3 = document.getElementById('stars3');
-
-    const lightMode = document.getElementById('jsi-snows');
-
     if(mode.classList.contains('dark')){
         toDarkMode();
     }else{
@@ -91,16 +84,16 @@ function toDarkMode() {
 
 function toLightMode() {
     var root = document.querySelector(':root');
-    root.style.setProperty('--backgroundColor','radial-gradient(circle, rgba(225,225,240,1) 0%, rgba(229,237,238,1) 56%, rgba(218,244,246,1) 100%)');
+    root.style.setProperty('--backgroundColor','radial-gradient(circle, #F6F6F6 0%, #F6F6F6 56%, #F6F6F6 100%)');
     root.style.setProperty('--bg-stars-color','black');
-
-    root.style.setProperty('--navbar-bg','#d1eef0');
-    root.style.setProperty('--navbar-shadow','rgb(23, 23, 100)');
-
     root.style.setProperty('--toggle-bg','#82cac3');
     root.style.setProperty('--toggle-ball-bg','rgb(117, 214, 177)');
     root.style.setProperty('--toggle-shadow','0 0 20px rgba(26, 25, 25, 0.781)');
-
+    
+    root.style.setProperty('--navbar-bg','#F6F6F6');
+    root.style.setProperty('--navbar-shadow','#FF6701');
+    root.style.setProperty('--navitem-hover','#FF6701');
+    root.style.setProperty('--navitem-line','#009378');
     //home section
     root.style.setProperty('--intro-small','#748DA6');
     root.style.setProperty('--intro-big','#B9E9FC');

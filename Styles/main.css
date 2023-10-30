@@ -9,7 +9,7 @@
   --intro-bigger-1: #222222;
   --intro-bigger-2: #222222;
   --intro-bigger-3: #222222;
-  --social-button-bg: #009378;
+  --social-button-bg: #C53678;
   --social-button: #ffffffb7;
   --social-button-hover: #ffffff;
   --intro-button-bg: #FF6701;
@@ -29,11 +29,11 @@
   --proj-cont-bg: #f6f6f6a6;
   --proj-cont-bg-hover: #F6F6F6;
   --proj-cont-hover-shadow: rgba(33, 33, 33, 0.841);
-  --work-card-border-color: #FF6701;
+  --work-card-border-color: #444444;
   --proj-cont-inner: inherit;
   --proj-title: #009378;
   --proj-title-line: #FF6701;
-  --proj-stack: rgba(0, 0, 0, 0.801);
+  --proj-stack: #C53678;
   --proj-detail: #023047;
   --proj-btn: #ff6701cb;
   --contact-card-bg: transparent;
@@ -898,7 +898,6 @@ svg {
     width: 95%;
     min-width: auto;
     height: 80%;
-    background: rgb(21, 40, 52);
     border-radius: 50px;
     opacity: 80%;
   }
@@ -917,10 +916,10 @@ svg {
     left: 4vw;
   }
   .intro .small {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
   }
   .intro .big {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
   .intro .bigger {
     font-size: 4.2rem;
@@ -934,6 +933,18 @@ svg {
     bottom: auto;
     top: 55vh;
   }
+  .social .btn-github .btn {
+    padding: 8px;
+  }
+  .social .btn-linkedin .btn {
+    padding: 9px;
+  }
+  .social .btn-freecodecamp .btn {
+    padding: 6px;
+  }
+  .social .btn-email .btn {
+    padding: 7px;
+  }
   .btn {
     margin: 8px;
     height: 40px;
@@ -945,7 +956,6 @@ svg {
   }
   .icon {
     font-size: 25px;
-    margin: -5px;
   }
   .icon .text {
     display: none;
@@ -1049,6 +1059,9 @@ svg {
   }
   svg {
     margin-top: 52px;
+  }
+  .neon {
+    font-size: 48px;
   }
   .projects-flex {
     padding: 6px;
@@ -1390,7 +1403,7 @@ svg {
   }
   .contact-layout {
     min-width: 100px;
-    width: 96%;
+    width: 80%;
     padding: 1.6%;
   }
   .form {
