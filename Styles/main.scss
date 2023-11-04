@@ -1,5 +1,6 @@
 :root {
     --navbar-bg: #F6F6F6;
+    --navbar-text-color: black;
     --navbar-shadow: #FF6701;
     --navitem-hover: #FF6701;
     --navitem-line: #009378;
@@ -28,7 +29,7 @@
     //work section
     --work-card-bg: transparent;
     --work-title-color1: #FF6701;
-    --work-title-shadow: 1px 0px 4px #FF6701, 2px 0px 4px #f07a2c, 3px 0px 4px #FF6701, 2px 0px 3px #FF6701, 2px 3px 15px #c56e34, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #fc8739,40px 0vw 200px #cc8353;;
+    --work-title-shadow: 1px 0px 4px #FF6701, 2px 0px 4px #f07a2c, 3px 0px 4px #FF6701, 2px 0px 3px #FF6701, 2px 3px 15px #c56e34, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #fc8739,40px 0vw 200px #cc8353;
     --proj-cont-bg: #f6f6f6a6;
     --proj-cont-bg-hover: #F6F6F6;
     --proj-cont-hover-shadow: rgba(33, 33, 33, 0.841);
@@ -49,7 +50,10 @@
     --contact-form-input-placeholder-focus: #FF6701;
     --contact-form-submit-bg: #FF6701;
     --contact-form-submit-text: #ffffff;
-    --contact-form-submit-active-bg: rgb(3, 14, 68);
+    --contact-form-submit-active-bg: rgb(255, 72, 0);
+
+
+    --temp: #000000a4;
 }
     
 
@@ -157,10 +161,10 @@ a{
 .nav-bar{
     a{
         background-image: linear-gradient(
-        to right,
-        var(--navitem-hover),
-        var(--navitem-hover) 50%,
-        #000 50%
+            to right,
+            var(--navitem-hover),
+            var(--navitem-hover) 50%,
+            #000 50%
         );
         background-size: 200% 100%;
         background-position: -100%;
@@ -168,7 +172,7 @@ a{
         padding: 5px 0;
         position: relative;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: var(--navbar-text-color);
         transition: all 0.3s ease-in-out;
     }
     a:before{
@@ -186,7 +190,7 @@ a{
     a:hover {
         background-position: 0;
         padding-bottom: 2px;
-        
+        -webkit-text-fill-color: transparent;
     }
       
     a:hover::before{
