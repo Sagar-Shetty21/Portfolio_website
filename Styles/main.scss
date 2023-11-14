@@ -533,19 +533,26 @@ a{
     border-left: none;
 }
 
+.skill-icon{
+    max-height: 100%;
+    margin-right: 10px;
+}
+
 .custom-btn {
   width: 130px;
   height: 40px;
   //color: #fff;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 10px 5px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   //background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
   margin: 32px;
@@ -559,9 +566,7 @@ a{
     overflow: hidden;
     transition: box-shadow 6s ease;
 }
-.btn-11:hover {
-    text-decoration: none;
-}
+
 .btn-11:before {
     position: absolute;
     content: '';
@@ -575,13 +580,12 @@ a{
 }
 
 .btn-11:hover{
-  opacity: .7;
-}
-.btn-11:hover{
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-              -4px -4px 6px 0 rgba(95, 224, 56, 0.2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(95, 224, 56, 0.2), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    opacity: .7;
+    text-decoration: none;
 }
 
 
@@ -1187,6 +1191,9 @@ svg {
         font-size: 10px;
         margin: 6px;
     }
+    .skill-icon{
+        max-height: 60%;
+    }
 
 //                                      Work Section
     .work-card{
@@ -1505,6 +1512,9 @@ svg {
             padding: 5px 12px;
             font-size: 16px;
             margin: 12px;
+        }
+        .skill-icon{
+            max-height: 70%;
         }
     
     //                                      Work Section
